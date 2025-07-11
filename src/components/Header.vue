@@ -32,7 +32,7 @@
           </a>
         </li>
         <li class="contact-item">
-          <a href="https://www.linkedin.com/in/joseperzant" target="_blank" rel="noopener">
+          <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-p%C3%A9rez-gonz%C3%A1lez-977999330/" target="_blank" rel="noopener">
             <LinkedinIcon class="icon" /> LinkedIn
           </a>
         </li>
