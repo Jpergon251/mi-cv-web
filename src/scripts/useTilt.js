@@ -10,7 +10,7 @@ export function useTilt(selector = '.tilt') {
         speed: 400,
         glare: true,
         "max-glare": 0.3,
-        scale: 1.15,
+        scale: 1.05,
         reverse: true,
     })
   })
