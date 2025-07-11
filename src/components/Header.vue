@@ -3,8 +3,11 @@
     <div class="profile-info">
       <img src="https://avatars.githubusercontent.com/u/114741595?v=4" alt="Foto de perfil" class="profile-image" />
 
-      <h1 class="profile-name">José Antonio Pérez</h1>
-      <h2 class="profile-title">Desarrollador en entorno Web y Videojuegos</h2>
+      <div class="profile-details">
+        <h1 class="profile-name">Developer Snake</h1>
+        <h2 class="profile-fullname">Jose Antonio Pérez González</h2>
+        <h3 class="profile-title">Desarrollador en entorno Web y Videojuegos</h3>
+      </div>  
     </div>
 
     <div class="contact-header">
