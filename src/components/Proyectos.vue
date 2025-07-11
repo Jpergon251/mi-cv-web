@@ -7,7 +7,7 @@
         <img
           src="https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png"
           alt="Midnight Gallery portada"
-          class="project-image"
+          class="project-image tilt"
         />
           <div class="project-info">
             <a
@@ -29,7 +29,7 @@
         <img
           src="https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg"
           alt="Los Giros portada"
-          class="project-image"
+          class="project-image tilt"
         />
         <div class="project-info">
           <a
@@ -46,7 +46,7 @@
         </div>
       </li>
       <li class="project-card">
-        <img src="https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png" alt="" class="project-image" />
+        <img src="https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png" alt="" class="project-image tilt" />
         <div class="project-info">
           <a
             href="https://francescovr.itch.io/globrush"
@@ -62,7 +62,7 @@
         </div>
       </li>
       <!-- <li class="project-card">
-        <img src="" alt="" class="project-image" />
+        <img src="" alt="" class="project-image tilt" />
         <div class="project-info">
           <a
             href=""
@@ -81,18 +81,7 @@
 </template>
 
 <script setup>
-import VanillaTilt from 'vanilla-tilt'
-import { onMounted } from 'vue'
+import { useTilt } from '../scripts/useTilt'
 
-onMounted(() => {
-  const cards = document.querySelectorAll('.project-image')
-  VanillaTilt.init(cards, {
-    max: 15,
-    speed: 400,
-    glare: true,
-    "max-glare": 0.3,
-    scale: 1.05,
-    reverse: true,
-  })
-})
+useTilt('.tilt')
 </script>

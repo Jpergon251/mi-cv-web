@@ -1,7 +1,7 @@
 <template>
   <header class="header-component">
     <div class="profile-info">
-      <img src="https://avatars.githubusercontent.com/u/114741595?v=4" alt="Foto de perfil" class="profile-image" />
+      <img src="https://avatars.githubusercontent.com/u/114741595?v=4" alt="Foto de perfil" class="profile-image tilt" />
 
       <div class="profile-details">
         <h1 class="profile-name">Developer Snake</h1>
@@ -41,3 +41,9 @@
     </div>
   </header>
 </template>
+
+<script setup>
+import { useTilt } from '../scripts/useTilt'
+
+useTilt('.tilt')
+</script>
