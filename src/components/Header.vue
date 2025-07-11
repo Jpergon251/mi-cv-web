@@ -6,7 +6,7 @@
       <div class="profile-details">
         <h1 class="profile-name">Developer Snake</h1>
         <h2 class="profile-fullname">Jose Antonio Pérez González</h2>
-        <h3 class="profile-title">Desarrollador en entorno Web y Videojuegos</h3>
+        <h3 class="profile-title">Desarrollador especializado en Videojuegos y en aplicaciones web</h3>
       </div>  
     </div>
 
