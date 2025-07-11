@@ -381,6 +381,7 @@ body {
 
       display: -webkit-box;
       -webkit-line-clamp: 4; // Número de líneas que quieres mostrar
+      line-clamp: 4; // Standard property for compatibility
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
