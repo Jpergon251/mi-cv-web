@@ -4,7 +4,8 @@
     <div class="columns">
       <div class="column">
         <SobreMi class="vue-component sobre-mi-component card"/>
-        
+        <Estudios class="vue-component estudios-component card"/>
+        <Objetivos class="vue-component objetivos-component card"/>
         <!-- Puedes añadir más tarjetas aquí -->
       </div>
       <div class="column">
@@ -20,4 +21,6 @@ import Header from './components/Header.vue'
 import SobreMi from './components/SobreMi.vue'
 import Proyectos from './components/Proyectos.vue'
 import Contacto from './components/Contacto.vue'
+import Estudios from './components/Estudios.vue'
+import Objetivos from './components/Objetivos.vue'
 </script>

@@ -111,6 +111,7 @@ body {
     }
   }
   .contact-header {
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -121,10 +122,12 @@ body {
 
   .contact-title{
   
+    
+
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;;
+    padding-left: 1rem;
   }
 
   ul {
@@ -168,7 +171,11 @@ body {
     }
   }
   
-}
+    @media screen and (max-width: 600px) {
+      display: none;
+      
+    }
+  }
 }
 
 .sobre-mi-component {
@@ -188,7 +195,38 @@ body {
   }
 }
 
+.estudios-component{
+  border-left: 6px solid $accent-hover;
+  h3 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .info-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-bottom: 2px solid $accent-hover;
+    border-radius: 3px;
+  }
+}
 
+.objetivos-component {
+  border-left: 6px solid $accent-hover;
+
+  h3 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .info-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-bottom: 2px solid $accent-hover;
+    border-radius: 3px;
+  }
+}
 .proyectos-component {
   border-left: 6px solid #0099FF;
 
@@ -281,6 +319,9 @@ body {
 }
 
 @media (max-width: 600px) {
+
+
+  
   .project-card {
     grid-template-columns: 1fr;
     text-align: center;
