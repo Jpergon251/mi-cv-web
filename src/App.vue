@@ -10,6 +10,7 @@
       </div>
       <div class="column">
         <Proyectos class="vue-component proyectos-component card"/>
+        <Contacto class="vue-component contacto-component card"/>
         <!-- Puedes añadir más tarjetas aquí -->
       </div>
     </div>
