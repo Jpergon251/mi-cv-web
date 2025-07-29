@@ -4,9 +4,9 @@
       <img src="https://avatars.githubusercontent.com/u/114741595?v=4" alt="Foto de perfil" class="profile-image tilt" />
 
       <div class="profile-details">
-        <h1 class="profile-name">Developer Snake</h1>
-        <h2 class="profile-fullname">Jose Antonio Pérez González</h2>
-        <h3 class="profile-title">Desarrollador especializado en Videojuegos y en aplicaciones web</h3>
+        <!-- <h1 class="profile-name">Developer Snake</h1> -->
+        <h1 class="profile-name">Jose Antonio Pérez González</h1>
+        <h2 class="profile-title">Desarrollador especializado en Videojuegos y en aplicaciones web</h2>
       </div>  
     </div>
 
