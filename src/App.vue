@@ -11,7 +11,7 @@
       </div>
       <div class="column">
         <ProyectosVideojuegos class="vue-component proyectos-component videogames-list card"/>
-        <ProyectosPaginas class="vue-component proyectos-component pages-list card"/>
+        <!-- <ProyectosPaginas class="vue-component proyectos-component pages-list card"/> -->
         <Contacto class="vue-component contacto-component card"/>
         <!-- Puedes añadir más tarjetas aquí -->
       </div>
