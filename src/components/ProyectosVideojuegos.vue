@@ -1,7 +1,6 @@
 <template>
   <section>
-    <h3 class="info-title">Proyectos</h3>
-    <h4 class="info-subtitle">Videojuegos</h4>
+    <h3 class="info-title">Videojuegos</h3>
     <ul class="project-list">
       <li class="project-card">
         <img
