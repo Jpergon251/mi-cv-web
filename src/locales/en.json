@@ -1,6 +1,10 @@
 {
   "profile-title": "Developer specialized in Video Games and Web Applications",
   "translate-button": "Translate",
+  "languages": {
+        "es": "Spanish",
+        "en": "English"
+    },
   "contact-title": "Contact and Profiles",
   "about-me-title": "About Me",
   "about-me-description": "I’m a <strong>developer</strong> with training in web applications and a specialization in video games and virtual reality. Since I was a child, I’ve been passionate about <strong>computing</strong>, <strong>video games</strong>, and technology.",

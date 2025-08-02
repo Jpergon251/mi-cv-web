@@ -1,6 +1,10 @@
 {
     "profile-title": "Desarrollador especializado en Videojuegos y en aplicaciones web",
     "translate-button": "Traducir",
+    "languages": {
+        "es": "Español",
+        "en": "Inglés"
+    },
     "contact-title": "Contacto y perfiles",
     "about-me-title": "Sobre mí",
     "about-me-description": "Soy un <strong>desarrollador</strong> con formación en aplicaciones web y especialización en videojuegos y realidad virtual. Desde pequeño me apasionan la <strong>informática</strong>, los <strong>videojuegos</strong> y la tecnología.",
