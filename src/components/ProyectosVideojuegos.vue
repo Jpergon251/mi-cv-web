@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3 class="info-title">Videojuegos</h3>
+    <h3 class="info-title">{{ $t('videogames.title') }}</h3>
     <ul class="project-list">
       <li class="project-card">
         <img
