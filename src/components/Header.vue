@@ -6,12 +6,14 @@
       <div class="profile-details">
         <!-- <h1 class="profile-name">Developer Snake</h1> -->
         <h1 class="profile-name">Jose Antonio Pérez González</h1>
-        <h2 class="profile-title">Desarrollador especializado en Videojuegos y en aplicaciones web</h2>
+        <h2 class="profile-title">{{ $t('profile-title') }}</h2>
       </div>  
     </div>
 
+    <TranslateButton />
+   
     <div class="contact-header">
-      <h2 class="contact-title">Contacto y perfiles</h2>
+      <h2 class="contact-title">{{ $t('contact-title') }}</h2>
 
       <ul class="contact-list">
         <li class="contact-item">
@@ -43,7 +45,9 @@
 </template>
 
 <script setup>
+
 import { useTilt } from '../scripts/useTilt'
+import TranslateButton from './TranslateButton.vue';
 
 useTilt('.tilt')
 </script>

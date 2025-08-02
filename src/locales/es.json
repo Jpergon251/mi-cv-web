@@ -1,0 +1,31 @@
+{
+    "profile-title": "Desarrollador especializado en Videojuegos y en aplicaciones web",
+    "translate-button": "Traducir",
+    "contact-title": "Contacto y perfiles",
+    "about-me-title": "Sobre mí",
+    "about-me-description": "Soy un <strong>desarrollador</strong> con formación en aplicaciones web y especialización en videojuegos y realidad virtual. Desde pequeño me apasionan la <strong>informática</strong>, los <strong>videojuegos</strong> y la tecnología.",
+    "education-title": "Estudios",
+    "education-description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
+    "education-description-2": "Más tarde cursé el <strong>Curso de Especialización en Videojuegos y Realidad Virtual</strong>, donde trabajé con <strong>Unity</strong> y <strong>Godot</strong>, programando en <strong>C#</strong> y <strong>GDScript</strong>, y creando experiencias en <strong>realidad virtual y mixta</strong>. Participé en proyectos colaborativos y en eventos como la <strong>Málaga Jam 2025</strong>.",
+    "objectives-title": "Objetivos",
+    "objectives-description": "Me interesa seguir creciendo como desarrollador en proyectos web o interactivos, combinando <strong>creatividad</strong>, <strong>tecnología</strong> y <strong>código limpio</strong>.",
+    "availability-title": "Disponibilidad",
+    "availability-description": "Actualmente estoy <strong>disponible</strong> para nuevos proyectos y colaboraciones. Si tienes una idea interesante o necesitas un desarrollador para tu equipo, no dudes en contactarme.",
+    "videogames": {
+        "title": "Videojuegos",
+        "games": [
+            {
+            "name": "Midnight Gallery",
+            "description": "Midnight Gallery es un plataformero 2D con elementos de puzle en el que encarnas a Kassia, una intrépida aventurera que explora los rincones más oscuros y misteriosos de la historia. Su objetivo es recuperar reliquias y tesoros olvidados para enriquecer un museo que busca preservar el legado de la humanidad. A lo largo de su viaje, Kassia deberá enfrentarse a desafíos físicos, acertijos y trampas que pondrán a prueba su ingenio y habilidades."
+            },
+            {
+            "name": "Los Giros",
+            "description": "Los Giros es un juego en el que el mundo está en 3D, pero tanto los enemigos como los escenarios están representados en 2D. Encarnas a John Colt, un cazarrecompensas que debe eliminar a todos los enemigos que se interponen en su camino. "
+            },
+            {
+            "name": "GlobRush",
+            "description": "En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida. "
+            }
+        ]
+    }
+}

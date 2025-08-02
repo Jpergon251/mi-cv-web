@@ -15,11 +15,11 @@
               rel="noopener"
               class="project-title"
             >
-              Midnight Gallery
+              {{ $t('videogames.games[0].name') }}
             </a>
 
             <p class="project-description">
-              Midnight Gallery es un plataformero 2D con elementos de puzle en el que encarnas a Kassia, una intrépida aventurera que explora los rincones más oscuros y misteriosos de la historia. Su objetivo es recuperar reliquias y tesoros olvidados para enriquecer un museo que busca preservar el legado de la humanidad. A lo largo de su viaje, Kassia deberá enfrentarse a desafíos físicos, acertijos y trampas que pondrán a prueba su ingenio y habilidades.
+              {{ $t('videogames.games[0].description') }}
             </p>
           </div>
       </li>
@@ -37,10 +37,10 @@
             rel="noopener"
             class="project-title"
           >
-            Los Giros
+            {{ $t('videogames.games[1].name') }}
           </a>
           <p class="project-description">
-            Los Giros es un juego en el que el mundo está en 3D, pero tanto los enemigos como los escenarios están representados en 2D. Encarnas a John Colt, un cazarrecompensas que debe eliminar a todos los enemigos que se interponen en su camino.
+            {{ $t('videogames.games[1].description') }}
           </p>
         </div>
       </li>
@@ -53,10 +53,10 @@
             rel="noopener"            
             class="project-title"
           >
-          GlobRush
+          {{ $t('videogames.games[2].name') }}
           </a>
           <p class="project-description">
-            En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida.
+            {{ $t('videogames.games[2].description') }}
           </p>
         </div>
       </li>

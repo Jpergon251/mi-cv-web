@@ -2,7 +2,7 @@
   <!-- Esta tarjeta solo visible en móvil -->
   <section class="contact-mobile card">
     <div class="contact-header">
-        <h2 class="contact-title">Contacto y perfiles</h2>
+        <h2 class="contact-title">{{ $t('contact-title') }}</h2>
 
         <ul class="contact-list">
           <li class="contact-item">
