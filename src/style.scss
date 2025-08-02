@@ -283,7 +283,13 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
 
+    .language-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      vertical-align: middle;
+    }
   }
+
 
   .language-select {
     border: 1px solid #ccc;
