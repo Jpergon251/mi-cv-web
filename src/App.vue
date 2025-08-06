@@ -5,6 +5,7 @@
       <div class="column">
         <SobreMi class="vue-component sobre-mi-component card"/>
         <Estudios class="vue-component estudios-component card"/>
+        <Idiomas class="vue-component idiomas-component card"/>
         <Objetivos class="vue-component objetivos-component card"/>
         <Disponibilidad class="vue-component disponibilidad-component card"/>
         <!-- Puedes añadir más tarjetas aquí -->
@@ -12,7 +13,7 @@
       <div class="column">
         <ProyectosVideojuegos class="vue-component proyectos-component videogames-list card"/>
         <!-- <ProyectosPaginas class="vue-component proyectos-component pages-list card"/> -->
-        <Contacto class="vue-component contacto-component card"/>
+        <!-- <Contacto class="vue-component contacto-component card"/> -->
         <!-- Puedes añadir más tarjetas aquí -->
       </div>
     </div>
@@ -29,5 +30,6 @@ import Objetivos from './components/Objetivos.vue'
 import Disponibilidad from './components/Disponibilidad.vue'
 import ProyectosVideojuegos from './components/ProyectosVideojuegos.vue'
 import ProyectosPaginas from './components/ProyectosPaginas.vue'
+import Idiomas from './components/Idiomas.vue'
 
 </script>

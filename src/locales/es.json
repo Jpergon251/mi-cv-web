@@ -31,5 +31,7 @@
             "description": "En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida. "
             }
         ]
-    }
+    },
+    "languages-title": "Idiomas",
+    "languages-description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma. Además, tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
 }

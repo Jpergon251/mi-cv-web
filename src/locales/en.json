@@ -31,5 +31,7 @@
         "description": "In this game, the character's organs play a key role in the difficulty. Each organ has an “oxygen” percentage, and if it drops below a certain level, “negative effects” are triggered that increase the challenge of the game."
       }
     ]
-  }
+  },
+  "languages-title": "Languages",
+  "languages-description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language. Additionally, I have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."
 }

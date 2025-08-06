@@ -38,6 +38,12 @@
             <LinkedinIcon class="icon" /> LinkedIn
           </a>
         </li>
+        <li class="contact-item">
+          <a href="tel:+34601251537" target="_blank" rel="noopener noreferrer">
+            <PhoneCall class="icon" /> 
+            +34 601251537
+          </a>
+        </li>
       </ul>
 
     </div>
@@ -45,7 +51,7 @@
 </template>
 
 <script setup>
-
+import { PhoneCall } from 'lucide-vue-next';
 import { useTilt } from '../scripts/useTilt'
 import TranslateButton from './TranslateButton.vue';
 
