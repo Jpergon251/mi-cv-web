@@ -2,7 +2,8 @@
     "profile": {
         "name": "José Antonio Pérez González",
         "title": "Developer specialized in Video Games and Web Applications",
-        "description": "I am a developer with training in web applications and a specialization in video games and virtual reality."
+        "description": "I am a developer with training in web applications and a specialization in video games and virtual reality.",
+        "languages": "Languages: 🇪🇸 Spanish (Native), 🇬🇧 English"
     },
     "translate-button": "Translate",
     "languages": {
@@ -44,7 +45,6 @@
             }
         ]
     },
-    "profile-languages": "Languages: 🇪🇸 Spanish (Native), 🇬🇧 English",
     "languages-card": {
         "title": "Languages",
         "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language. I also have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."

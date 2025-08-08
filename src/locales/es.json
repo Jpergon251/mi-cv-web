@@ -2,7 +2,8 @@
     "profile": {
         "name": "José Antonio Pérez González",
         "title": "Desarrollador especializado en Videojuegos y en aplicaciones web",
-        "description": "Soy un desarrollador con formación en aplicaciones web y especialización en videojuegos y realidad virtual."
+        "description": "Soy un desarrollador con formación en aplicaciones web y especialización en videojuegos y realidad virtual.",
+        "languages": "Idiomas: 🇪🇸 Español (Nativo), 🇬🇧 Inglés"
     },
     "translate-button": "Traducir",
     "languages": {
@@ -44,7 +45,6 @@
             }
         ]
     },
-    "profile-languages": "Idiomas: 🇪🇸 Español (Nativo), 🇬🇧 Inglés",
     "languages-card": {
         "title": "Idiomas",
         "description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma. Además, tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
