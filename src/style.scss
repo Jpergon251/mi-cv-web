@@ -38,7 +38,7 @@ body {
 // 🧾 Tarjetas
 .card {
   background-color: $section-bg;
-  border-left: $accent-hover 6px solid;
+  border-left:  6px solid $accent-hover;
   padding: 1.5rem 2rem;
   margin: 0 ;
   border-radius: 12px;
@@ -571,12 +571,13 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #99999942;
   z-index: 3;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 50%;
+  border-radius: 5px;
 
   &.left {
     left: -15px;
@@ -593,9 +594,9 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  width: 50px; /* ancho del fade */
+  width: 30px; /* ancho del fade */
   height: 100%;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 }
 
