@@ -1,6 +1,6 @@
 <template>
   <!-- Esta tarjeta solo visible en móvil -->
-  <section class="contact-mobile card">
+  <section>
     <div class="contact-header">
         <h2 class="contact-title">{{ $t('contact-title') }}</h2>
 

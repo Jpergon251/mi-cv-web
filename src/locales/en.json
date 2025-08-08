@@ -1,38 +1,56 @@
 {
-  "profile-title": "Developer specialized in Video Games and Web Applications",
-  "translate-button": "Translate",
-  "languages": {
+    "profile": {
+        "name": "José Antonio Pérez González",
+        "title": "Developer specialized in Video Games and Web Applications",
+        "description": "I am a developer with training in web applications and a specialization in video games and virtual reality."
+    },
+    "translate-button": "Translate",
+    "languages": {
         "es": "Spanish",
         "en": "English"
     },
-  "contact-title": "Contact and Profiles",
-  "about-me-title": "About Me",
-  "about-me-description": "I’m a <strong>developer</strong> with training in web applications and a specialization in video games and virtual reality. Since I was a child, I’ve been passionate about <strong>computing</strong>, <strong>video games</strong>, and technology.",
-  "education-title": "Education",
-  "education-description-1": "I studied the <strong>Higher Degree in Web Application Development</strong> at IES Rafael Alberti (Cádiz), where I learned <strong>frontend and backend</strong> with technologies such as <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, and frameworks like <strong>Vue</strong> and <strong>React</strong>.",
-  "education-description-2": "Later, I completed the <strong>Specialization Course in Video Games and Virtual Reality</strong>, where I worked with <strong>Unity</strong> and <strong>Godot</strong>, programming in <strong>C#</strong> and <strong>GDScript</strong>, and creating experiences in <strong>virtual and mixed reality</strong>. I participated in collaborative projects and events like the <strong>Málaga Jam 2025</strong>.",
-  "objectives-title": "Objectives",
-  "objectives-description": "I’m interested in continuing to grow as a developer in web or interactive projects, combining <strong>creativity</strong>, <strong>technology</strong>, and <strong>clean code</strong>.",
-  "availability-title": "Availability",
-  "availability-description": "I’m currently <strong>available</strong> for new projects and collaborations. If you have an interesting idea or need a developer for your team, don’t hesitate to contact me.",
-  "videogames": {
-    "title": "Videogames",
-    "games": [
-      {
-        "name": "Midnight Gallery",
-        "description": "Midnight Gallery is a 2D platformer with puzzle elements in which you play as Kassia, a brave adventurer exploring the darkest and most mysterious corners of history. Her goal is to recover forgotten relics and treasures to enrich a museum that seeks to preserve humanity's legacy. Throughout her journey, Kassia will face physical challenges, puzzles, and traps that will test her wit and skills."
-      },
-      {
-        "name": "Los Giros",
-        "description": "Los Giros is a game where the world is in 3D, but both enemies and environments are represented in 2D. You play as John Colt, a bounty hunter who must eliminate all enemies in his path."
-      },
-      {
-        "name": "GlobRush",
-        "description": "In this game, the character's organs play a key role in the difficulty. Each organ has an “oxygen” percentage, and if it drops below a certain level, “negative effects” are triggered that increase the challenge of the game."
-      }
-    ]
-  },
-  "profile-languages": "Languages: 🇪🇸 Spanish (Native), 🇬🇧 English",
-  "languages-title": "Languages",
-  "languages-description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language. Additionally, I have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."
+    "contact-title": "Contact & Profiles",
+    "about-me": {
+        "title": "About Me",
+        "description": "I am a <strong>developer</strong> with training in web applications and a specialization in video games and virtual reality. Since childhood, I have been passionate about <strong>computing</strong>, <strong>video games</strong>, and technology."
+    },
+    "education": {
+        "title": "Education",
+        "description-1": "I studied the <strong>Higher Degree in Web Application Development</strong> at IES Rafael Alberti (Cádiz), where I learned <strong>frontend and backend</strong> development with technologies such as <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, and frameworks like <strong>Vue</strong> and <strong>React</strong>.",
+        "description-2": "Later, I completed the <strong>Specialization Course in Video Games and Virtual Reality</strong>, where I worked with <strong>Unity</strong> and <strong>Godot</strong>, programming in <strong>C#</strong> and <strong>GDScript</strong>, and creating experiences in <strong>virtual and mixed reality</strong>. I participated in collaborative projects and events such as the <strong>Málaga Jam 2025</strong>."
+    },
+    "objectives": {
+        "title": "Objectives",
+        "description": "I am interested in continuing to grow as a developer in web or interactive projects, combining <strong>creativity</strong>, <strong>technology</strong>, and <strong>clean code</strong>."
+    },
+    "availability": {
+        "title": "Availability",
+        "description": "I am currently <strong>available</strong> for new projects and collaborations. If you have an interesting idea or need a developer for your team, feel free to contact me."
+    },
+    "videogames": {
+        "title": "Video Games",
+        "games": [
+            {
+                "name": "Midnight Gallery",
+                "description": "Midnight Gallery is a 2D platformer with puzzle elements in which you play as Kassia, a daring adventurer exploring the darkest and most mysterious corners of history. Her goal is to recover forgotten relics and treasures to enrich a museum dedicated to preserving humanity’s legacy. Throughout her journey, Kassia will face physical challenges, puzzles, and traps that will test her wit and skills."
+            },
+            {
+                "name": "Los Giros",
+                "description": "Los Giros is a game where the world is in 3D, but both the enemies and the environments are represented in 2D. You play as John Colt, a bounty hunter who must eliminate all enemies standing in his way."
+            },
+            {
+                "name": "GlobRush",
+                "description": "In this game, the character’s organs play a key role in the difficulty. Each organ has an “oxygen” percentage, and if it drops below a certain level, “negative effects” are triggered that increase the challenge of the game."
+            }
+        ]
+    },
+    "profile-languages": "Languages: 🇪🇸 Spanish (Native), 🇬🇧 English",
+    "languages-card": {
+        "title": "Languages",
+        "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language. I also have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."
+    },
+    "skills": {
+        "title": "Skills & Technologies",
+        "description": "These are some of the tools and technologies I work with."
+    }
 }

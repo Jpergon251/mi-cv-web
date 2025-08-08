@@ -1,20 +1,32 @@
 {
-    "profile-title": "Desarrollador especializado en Videojuegos y en aplicaciones web",
+    "profile": {
+        "name": "José Antonio Pérez González",
+        "title": "Desarrollador especializado en Videojuegos y en aplicaciones web",
+        "description": "Soy un desarrollador con formación en aplicaciones web y especialización en videojuegos y realidad virtual."
+    },
     "translate-button": "Traducir",
     "languages": {
         "es": "Español",
         "en": "Inglés"
     },
     "contact-title": "Contacto y perfiles",
-    "about-me-title": "Sobre mí",
-    "about-me-description": "Soy un <strong>desarrollador</strong> con formación en aplicaciones web y especialización en videojuegos y realidad virtual. Desde pequeño me apasionan la <strong>informática</strong>, los <strong>videojuegos</strong> y la tecnología.",
-    "education-title": "Estudios",
-    "education-description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
-    "education-description-2": "Más tarde cursé el <strong>Curso de Especialización en Videojuegos y Realidad Virtual</strong>, donde trabajé con <strong>Unity</strong> y <strong>Godot</strong>, programando en <strong>C#</strong> y <strong>GDScript</strong>, y creando experiencias en <strong>realidad virtual y mixta</strong>. Participé en proyectos colaborativos y en eventos como la <strong>Málaga Jam 2025</strong>.",
-    "objectives-title": "Objetivos",
-    "objectives-description": "Me interesa seguir creciendo como desarrollador en proyectos web o interactivos, combinando <strong>creatividad</strong>, <strong>tecnología</strong> y <strong>código limpio</strong>.",
-    "availability-title": "Disponibilidad",
-    "availability-description": "Actualmente estoy <strong>disponible</strong> para nuevos proyectos y colaboraciones. Si tienes una idea interesante o necesitas un desarrollador para tu equipo, no dudes en contactarme.",
+    "about-me": {
+        "title": "Sobre mí",
+        "description": "Soy un <strong>desarrollador</strong> con formación en aplicaciones web y especialización en videojuegos y realidad virtual. Desde pequeño me apasionan la <strong>informática</strong>, los <strong>videojuegos</strong> y la tecnología."
+    },
+    "education":{
+        "title": "Estudios",
+        "description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
+        "description-2": "Más tarde cursé el <strong>Curso de Especialización en Videojuegos y Realidad Virtual</strong>, donde trabajé con <strong>Unity</strong> y <strong>Godot</strong>, programando en <strong>C#</strong> y <strong>GDScript</strong>, y creando experiencias en <strong>realidad virtual y mixta</strong>. Participé en proyectos colaborativos y en eventos como la <strong>Málaga Jam 2025</strong>."
+    },
+    "objectives": {
+        "title": "Objetivos",
+        "description": "Me interesa seguir creciendo como desarrollador en proyectos web o interactivos, combinando <strong>creatividad</strong>, <strong>tecnología</strong> y <strong>código limpio</strong>."
+    },
+    "availability": {
+        "title": "Disponibilidad",
+        "description": "Actualmente estoy <strong>disponible</strong> para nuevos proyectos y colaboraciones. Si tienes una idea interesante o necesitas un desarrollador para tu equipo, no dudes en contactarme."
+    },
     "videogames": {
         "title": "Videojuegos",
         "games": [
@@ -33,6 +45,12 @@
         ]
     },
     "profile-languages": "Idiomas: 🇪🇸 Español (Nativo), 🇬🇧 Inglés",
-    "languages-title": "Idiomas",
-    "languages-description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma. Además, tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
+    "languages-card": {
+        "title": "Idiomas",
+        "description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma. Además, tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
+    },
+    "skills": {
+        "title": "Habilidades y tecnologías",
+        "description": "Estas son algunas de las herramientas y tecnologías que manejo."
+    }
 }
