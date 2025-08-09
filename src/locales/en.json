@@ -26,7 +26,23 @@
     },
     "availability": {
         "title": "Availability",
-        "description": "I am currently <strong>available</strong> for new projects and collaborations. If you have an interesting idea or need a developer for your team, feel free to contact me."
+        "description": [
+            "I am currently <strong>available</strong> for new projects and collaborations. If you have an interesting idea or need a developer for your team, feel free to contact me.",
+            "I am available for <strong>remote work</strong> and can <strong>integrate immediately</strong>."
+        ]
+    },
+    "experience": {
+        "title": "Experience",
+        "description": "I have worked on various web development and video game projects, both independently and in teams. Here are some highlighted examples:",
+        "works": {
+            "controlnet": {
+                "job-title": "Web Developer",
+                "location": "On-site · Jerez de la Frontera, Andalusia",
+                "date": "Oct. 2023 – Dec. 2023 · 3 months",
+                "name": "ControlNet",
+                "tags": ["C#", "Razor Pages", "Web Design", "Web Applications"]
+            }
+        }
     },
     "videogames": {
         "title": "Video Games",

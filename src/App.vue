@@ -8,6 +8,7 @@
         <Idiomas class="vue-component idiomas-component card"/>
         <Objetivos class="vue-component objetivos-component card"/>
         <Disponibilidad class="vue-component disponibilidad-component card"/>
+        <Experiencia class="vue-component experiencia-component card"/>
         <!-- Puedes añadir más tarjetas aquí -->
       </div>
       <div class="column">
@@ -33,5 +34,6 @@ import ProyectosVideojuegos from './components/ProyectosVideojuegos.vue'
 import ProyectosPaginas from './components/ProyectosPaginas.vue'
 import Idiomas from './components/Idiomas.vue'
 import Competencias from './components/Competencias.vue'
+import Experiencia from './components/Experiencia.vue'
 
 </script>

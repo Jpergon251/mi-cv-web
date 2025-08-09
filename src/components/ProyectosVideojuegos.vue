@@ -15,7 +15,7 @@
               rel="noopener"
               class="project-title"
             >
-              {{ $t('videogames.games[0].name') }}
+              {{ $t('videogames.games[0].name') }} <img src="/src/assets/icons/godot-icon.png" alt="Godot" class="engine-icon" />
             </a>
 
             <p class="project-description">
@@ -37,7 +37,7 @@
             rel="noopener"
             class="project-title"
           >
-            {{ $t('videogames.games[1].name') }}
+            {{ $t('videogames.games[1].name') }} <img src="/src/assets/icons/unity-icon.png" alt="Unity" class="engine-icon" />
           </a>
           <p class="project-description">
             {{ $t('videogames.games[1].description') }}
@@ -53,7 +53,7 @@
             rel="noopener"            
             class="project-title"
           >
-          {{ $t('videogames.games[2].name') }}
+          {{ $t('videogames.games[2].name') }} <img src="/src/assets/icons/godot-icon.png" alt="Godot" class="engine-icon" />
           </a>
           <p class="project-description">
             {{ $t('videogames.games[2].description') }}
@@ -80,6 +80,7 @@
 </template>
 
 <script setup>
+import { Icon } from 'lucide-vue-next';
 import { useTilt } from '../scripts/useTilt'
 
 useTilt('.tilt')

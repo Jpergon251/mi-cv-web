@@ -26,22 +26,41 @@
     },
     "availability": {
         "title": "Disponibilidad",
-        "description": "Actualmente estoy <strong>disponible</strong> para nuevos proyectos y colaboraciones. Si tienes una idea interesante o necesitas un desarrollador para tu equipo, no dudes en contactarme."
+        "description": [
+            "Actualmente estoy <strong>disponible</strong> para nuevos proyectos y colaboraciones. Si tienes una idea interesante o necesitas un desarrollador para tu equipo, no dudes en contactarme.",
+            "Tengo disponibilidad para trabajar <strong>en remoto</strong> y con <strong>integración inmediata</strong>."
+        ]
+    },
+    "experience": {
+        "title": "Experiencia",
+        "description": "He trabajado en varios proyectos de desarrollo web y videojuegos, tanto de forma independiente como en equipo. Aquí tienes algunos ejemplos destacados:",
+        "works": {
+            "controlnet":{
+                "job-title": "Desarrollador de web",
+                "location": "Presencial · Jerez de la Frontera, Andalucía",
+                "date": "Oct. 2023 – Dic. 2023 · 3 meses",
+                "name": "ControlNet",
+                "tags": ["C#", "Razor Pages", "Diseño Web", "Aplicaciones Web"]
+            }
+        }
     },
     "videogames": {
         "title": "Videojuegos",
         "games": [
             {
             "name": "Midnight Gallery",
-            "description": "Midnight Gallery es un plataformero 2D con elementos de puzle en el que encarnas a Kassia, una intrépida aventurera que explora los rincones más oscuros y misteriosos de la historia. Su objetivo es recuperar reliquias y tesoros olvidados para enriquecer un museo que busca preservar el legado de la humanidad. A lo largo de su viaje, Kassia deberá enfrentarse a desafíos físicos, acertijos y trampas que pondrán a prueba su ingenio y habilidades."
-            },
+            "description": "Midnight Gallery es un plataformero 2D con elementos de puzle en el que encarnas a Kassia, una intrépida aventurera que explora los rincones más oscuros y misteriosos de la historia. Su objetivo es recuperar reliquias y tesoros olvidados para enriquecer un museo que busca preservar el legado de la humanidad. A lo largo de su viaje, Kassia deberá enfrentarse a desafíos físicos, acertijos y trampas que pondrán a prueba su ingenio y habilidades.",
+            "engine": "Godot"
+        },
             {
             "name": "Los Giros",
-            "description": "Los Giros es un juego en el que el mundo está en 3D, pero tanto los enemigos como los escenarios están representados en 2D. Encarnas a John Colt, un cazarrecompensas que debe eliminar a todos los enemigos que se interponen en su camino. "
-            },
+            "description": "Los Giros es un juego en el que el mundo está en 3D, pero tanto los enemigos como los escenarios están representados en 2D. Encarnas a John Colt, un cazarrecompensas que debe eliminar a todos los enemigos que se interponen en su camino.",
+            "engine": "Unity"
+        },
             {
             "name": "GlobRush",
-            "description": "En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida. "
+            "description": "En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida.",
+            "engine": "Godot"
             }
         ]
     },
@@ -61,4 +80,5 @@
             }
         }
     }
+
 }
