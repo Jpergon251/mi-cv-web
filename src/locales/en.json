@@ -51,6 +51,14 @@
     },
     "skills": {
         "title": "Skills & Technologies",
-        "description": "These are some of the tools and technologies I work with."
+        "description": "These are some of the tools and technologies I work with.",
+        "items": {
+            "blender": {
+                "description": "Some projects created with <strong>Blender</strong>."
+            },
+            "affinity": {
+                "description": "Some designs made for the game <strong>Los Giros</strong>."
+            }
+        }
     }
 }

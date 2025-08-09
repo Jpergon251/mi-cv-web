@@ -51,6 +51,14 @@
     },
     "skills": {
         "title": "Habilidades y tecnologías",
-        "description": "Estas son algunas de las herramientas y tecnologías que manejo."
+        "description": "Estas son algunas de las herramientas y tecnologías que manejo.",
+        "items":{
+            "blender": {
+                "description": "Algunos proyectos realizados con <strong>Blender</strong>."
+            },
+            "affinity": {
+                "description": "Algunos diseños hechos del videojuego de <strong>Los Giros</strong>."
+            }
+        }
     }
 }

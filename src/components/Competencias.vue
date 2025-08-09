@@ -8,16 +8,25 @@
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/800px-Blender_logo_no_text.svg.png"
             alt="Blender"
+            class="tech-icon"
           />
           <span>Blender</span>
         </div>
 
-        <div class="carousel-container">
-          <button class="arrow left" @click="scrollLeft">←</button>
-
-          <div class="carousel" ref="carouselRef">
+        <div>
+          <p v-html="$t('skills.items.blender.description')"></p>
+        </div>
+        <div class="carousel-container" :class="{ 'has-left': canScrollLeftBlender, 'has-right': canScrollRightBlender }" >
+          <button 
+            v-if="canScrollLeftBlender" 
+            class="arrow left" 
+            @click="scrollLeftBlender"
+          >
+            ←
+          </button>
+          <div class="carousel"  ref="carouselBlenderRef" @scroll="checkScrollBlender">
             <img
-              v-for="(img, index) in images"
+              v-for="(img, index) in imagesBlender"
               :key="index"
               :src="img"
               alt="Proyecto Blender"
@@ -26,7 +35,59 @@
             />
           </div>
 
-          <button class="arrow right" @click="scrollRight">→</button>
+          <button 
+            v-if="canScrollRightBlender" 
+            class="arrow right" 
+            @click="scrollRightBlender"
+          >
+            →
+          </button>
+        </div>
+      </li>
+      <li class="skill-item">
+        <div class="skill-info">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Affinity_designer_icon_2019.png"
+            alt="Affinity Designer"
+            class="tech-icon"
+          />
+          <span>Affinity Designer </span>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Affinity_Photo_icon.png"
+            alt="Affinity Photo"
+            class="tech-icon"
+          />
+           <span>Affinity Photo</span>
+        </div>
+        <div>
+          <p v-html="$t('skills.items.affinity.description')"></p>
+        </div>
+        <div class="carousel-container" :class="{ 'has-left': canScrollLeftAffinity, 'has-right': canScrollRightAffinity }">
+          <button 
+            v-if="canScrollLeftAffinity" 
+            class="arrow left" 
+            @click="scrollLeftAffinity"
+          >
+            ←
+          </button>
+          <div class="carousel"  ref="carouselAffinityRef" @scroll="checkScrollAffinity">
+            <img
+              v-for="(img, index) in imagesAffinity"
+              :key="index"
+              :src="img"
+              alt="Proyecto Affinity"
+              class="carousel-image"
+              @click="openLightbox(img)"
+            />
+          </div>
+
+          <button 
+            v-if="canScrollRightAffinity" 
+            class="arrow right" 
+            @click="scrollRightAffinity"
+          >
+            →
+          </button>
         </div>
       </li>
     </ul>
@@ -41,28 +102,80 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import Lightbox from './Lightbox.vue'
 
-const images = [
+const imagesAffinity = [
+  '/images/Affinity/diseno_carta_deadeye.png',
+  "/images/Affinity/diseno_carta_especial_double_shot.png",
+  "/images/Affinity/diseno_carta_heal.png",
+  "/images/Affinity/diseno_carta_shoot.png",
+  "/images/Affinity/disenos_carta_dodge.png",
+  "/images/Affinity/disenos_carta_reload.png",
+  "/images/Affinity/LogoLosGirosCon_Fondos.png"
+]
+
+const imagesBlender = [
   '/images/Blender/Fox1.png',
   '/images/Blender/Fox2.png',
   '/images/Blender/Mat1.png',
-  '/images/Blender/Mat2.png'
+  '/images/Blender/Mat2.png',
+  '/images/Blender/Table.png'
 ]
 
-const carouselRef = ref(null)
 const selectedImage = ref(null)
+const carouselBlenderRef = ref(null)
+const canScrollLeftBlender = ref(false)
+const canScrollRightBlender = ref(false)
 
-const scrollLeft = () => {
-  carouselRef.value.scrollBy({ left: -300, behavior: 'smooth' })
+const carouselAffinityRef = ref(null)
+const canScrollLeftAffinity = ref(false)
+const canScrollRightAffinity = ref(false)
+
+const checkScrollBlender = () => {
+  const el = carouselBlenderRef.value
+  canScrollLeftBlender.value = el.scrollLeft > 0
+  canScrollRightBlender.value = el.scrollLeft + el.clientWidth < el.scrollWidth
 }
 
-const scrollRight = () => {
-  carouselRef.value.scrollBy({ left: 300, behavior: 'smooth' })
+const checkScrollAffinity = () => {
+  const el = carouselAffinityRef.value
+  canScrollLeftAffinity.value = el.scrollLeft > 0
+  canScrollRightAffinity.value = el.scrollLeft + el.clientWidth < el.scrollWidth
+}
 
+const scrollLeftBlender = () => {
+  carouselBlenderRef.value.scrollBy({ left: -300, behavior: 'smooth' })
+}
+
+const scrollRightBlender = () => {
+  carouselBlenderRef.value.scrollBy({ left: 300, behavior: 'smooth' })
+}
+
+const scrollLeftAffinity = () => {
+  carouselAffinityRef.value.scrollBy({ left: -300, behavior: 'smooth' })
+}
+
+const scrollRightAffinity = () => {
+  carouselAffinityRef.value.scrollBy({ left: 300, behavior: 'smooth' })
 }
 const openLightbox = (img) => {
   selectedImage.value = img
 }
+onMounted(() => {
+  checkScrollBlender()
+  checkScrollAffinity()
+  window.addEventListener('resize', () => {
+    checkScrollBlender()
+    checkScrollAffinity()
+  })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', () => {
+    checkScrollBlender()
+    checkScrollAffinity()
+  })
+})
+
 </script>
