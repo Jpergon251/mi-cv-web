@@ -67,7 +67,19 @@ body {
   justify-content: space-around;
   text-align: center;
   padding: 2rem 1rem;
-  background: linear-gradient(to bottom, $accent, $accent-hover);
+  
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0), /* color superior con transparencia */
+      rgba(0, 0, 0, 0.9)  /* color inferior con transparencia */
+    ),
+    url('/images/Background/Cadiz.jpg'); // ojo: quitar "public" en la ruta
+
+  background-size: cover;
+  background-position: center;
+  width: 99%;
+  margin: 0 auto;
+  border-radius: 0 0 12px 12px;
   color: white;
 
   div {
