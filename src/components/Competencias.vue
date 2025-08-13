@@ -106,21 +106,21 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import Lightbox from './Lightbox.vue'
 
 const imagesAffinity = [
-  '/images/Affinity/diseno_carta_deadeye.png',
-  "/images/Affinity/diseno_carta_especial_double_shot.png",
-  "/images/Affinity/diseno_carta_heal.png",
-  "/images/Affinity/diseno_carta_shoot.png",
-  "/images/Affinity/disenos_carta_dodge.png",
-  "/images/Affinity/disenos_carta_reload.png",
-  "/images/Affinity/LogoLosGirosCon_Fondos.png"
+  '/images/Affinity/diseno_carta_deadeye.webp',
+  "/images/Affinity/diseno_carta_especial_double_shot.webp",
+  "/images/Affinity/diseno_carta_heal.webp",
+  "/images/Affinity/diseno_carta_shoot.webp",
+  "/images/Affinity/disenos_carta_dodge.webp",
+  "/images/Affinity/disenos_carta_reload.webp",
+  "/images/Affinity/LogoLosGirosCon_Fondos.webp"
 ]
 
 const imagesBlender = [
-  '/images/Blender/Fox1.png',
-  '/images/Blender/Fox2.png',
-  '/images/Blender/Mat1.png',
-  '/images/Blender/Mat2.png',
-  '/images/Blender/Table.png'
+  '/images/Blender/Fox1.webp',
+  '/images/Blender/Fox2.webp',
+  '/images/Blender/Mat1.webp',
+  '/images/Blender/Mat2.webp',
+  '/images/Blender/Table.webp'
 ]
 
 const selectedImage = ref(null)

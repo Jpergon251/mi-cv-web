@@ -45,6 +45,11 @@
             +34 601251537
           </a>
         </li>
+        <!-- <li class="contact-item">
+          <a href="#" @click.prevent="descargarCV">
+            <i class="fas fa-file-text icon"></i> Descargar CV
+          </a>
+        </li> -->
       </ul>
 
     </div>
