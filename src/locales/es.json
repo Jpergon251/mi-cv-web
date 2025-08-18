@@ -77,6 +77,9 @@
             },
             "affinity": {
                 "description": "Algunos diseños hechos del videojuego de <strong>Los Giros</strong>."
+            },
+            "pinokio": {
+                "description": "Experiencia en el uso de <strong>herramientas con IA ejecutadas en local</strong> para optimizar flujos de trabajo, acelerar <strong>procesos creativos</strong> y generar <strong>prototipos funcionales</strong> sin depender de servicios en la nube."
             }
         }
     }

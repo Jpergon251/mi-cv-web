@@ -90,6 +90,21 @@
           </button>
         </div>
       </li>
+      <li class="skill-item">
+
+        <div class="skill-info">
+          <img
+            src="https://pinokio.co/images/pinokio.png"
+            alt="Pinokio"
+            class="tech-icon"
+          />
+          <span>Pinokio</span>
+
+        </div>
+        <div>
+          <p v-html="$t('skills.items.pinokio.description')"></p>
+        </div>
+      </li>
     </ul>
     <Teleport to="body">
       <Lightbox

@@ -74,6 +74,9 @@
             },
             "affinity": {
                 "description": "Some designs made for the game <strong>Los Giros</strong>."
+            },
+            "pinokio": {
+                "description": "Experience in using <strong>AI tools executed locally</strong> to optimize workflows, accelerate <strong>creative processes</strong>, and generate <strong>functional prototypes</strong> without relying on cloud services."
             }
         }
     }
