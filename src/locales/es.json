@@ -17,7 +17,7 @@
     },
     "education":{
         "title": "Estudios",
-        "description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
+        "description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>Node.js</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>Kotlin</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
         "description-2": "Más tarde cursé el <strong>Curso de Especialización en Videojuegos y Realidad Virtual</strong>, donde trabajé con <strong>Unity</strong> y <strong>Godot</strong>, programando en <strong>C#</strong> y <strong>GDScript</strong>, y creando experiencias en <strong>realidad virtual y mixta</strong>. Participé en proyectos colaborativos y en eventos como la <strong>Málaga Jam 2025</strong>."
     },
     "objectives": {
@@ -40,7 +40,7 @@
                 "location": "Presencial · Jerez de la Frontera, Andalucía",
                 "date": "Oct. 2023 – Dic. 2023 · 3 meses",
                 "name": "ControlNet",
-                "tags": ["C#", "Razor Pages", "Diseño Web", "Aplicaciones Web"]
+                "tags": ["C#", "Razor Pages", "Diseño Web", "Aplicaciones Web", "Angular"]
             }
         }
     },

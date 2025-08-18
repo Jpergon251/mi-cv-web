@@ -105,6 +105,7 @@
           <p v-html="$t('skills.items.pinokio.description')"></p>
         </div>
       </li>
+
     </ul>
     <Teleport to="body">
       <Lightbox

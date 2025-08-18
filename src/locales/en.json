@@ -17,7 +17,7 @@
     },
     "education": {
         "title": "Education",
-        "description-1": "I studied the <strong>Higher Degree in Web Application Development</strong> at IES Rafael Alberti (Cádiz), where I learned <strong>frontend and backend</strong> development with technologies such as <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, and frameworks like <strong>Vue</strong> and <strong>React</strong>.",
+        "description-1": "I studied the <strong>Higher Degree in Web Application Development</strong> at IES Rafael Alberti (Cádiz), where I learned <strong>frontend and backend</strong> development with technologies such as <strong>Node.js</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>Kotlin</strong> and frameworks like <strong>Vue</strong> and <strong>React</strong>.",
         "description-2": "Later, I completed the <strong>Specialization Course in Video Games and Virtual Reality</strong>, where I worked with <strong>Unity</strong> and <strong>Godot</strong>, programming in <strong>C#</strong> and <strong>GDScript</strong>, and creating experiences in <strong>virtual and mixed reality</strong>. I participated in collaborative projects and events such as the <strong>Málaga Jam 2025</strong>."
     },
     "objectives": {
@@ -40,7 +40,7 @@
                 "location": "On-site · Jerez de la Frontera, Andalusia",
                 "date": "Oct. 2023 – Dec. 2023 · 3 months",
                 "name": "ControlNet",
-                "tags": ["C#", "Razor Pages", "Web Design", "Web Applications"]
+                "tags": ["C#", "Razor Pages", "Web Design", "Web Applications", "Angular"]
             }
         }
     },
