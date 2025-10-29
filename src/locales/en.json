@@ -1,14 +1,20 @@
 {
     "profile": {
         "name": "José Antonio Pérez González",
-        "title": "Developer specialized in Video Games and Web Applications",
+        "title": "Full-stack web developer and specialized in video games and virtual reality",
         "description": "I am a developer with training in web applications and a specialization in video games and virtual reality.",
         "languages": "Languages: 🇪🇸 Spanish (Native), 🇬🇧 English"
     },
     "translate-button": "Translate",
     "languages": {
-        "es": "Spanish",
-        "en": "English"
+        "name": {
+            "es": "Español",
+            "en": "English"
+        },
+        "description": {
+            "es": "Translate to Spanish",
+            "en": "Translate to English"
+        }
     },
     "contact-title": "Contact & Profiles",
     "about-me": {
@@ -63,7 +69,17 @@
     },
     "languages-card": {
         "title": "Languages",
-        "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language. I also have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."
+        "spanish": {
+            "name": "🇪🇸 Spanish",
+            "level": "Native",
+            "description": "I have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."
+        },
+        "english": {
+            "name": "🇬🇧 English",
+            "level": "Advanced",
+            "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language."
+        },
+        "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language."
     },
     "skills": {
         "title": "Skills & Technologies",
@@ -79,5 +95,19 @@
                 "description": "Experience in using <strong>AI tools executed locally</strong> to optimize workflows, accelerate <strong>creative processes</strong>, and generate <strong>functional prototypes</strong> without relying on cloud services."
             }
         }
+    },
+    "frameworks": {
+        "title": "Frameworks & Technologies",
+        "subtitle":{
+            "frameworks": {
+                "name": "Frameworks",
+                "description": "These are some frameworks and technologies I work with."
+            },
+            "languages": {
+                "name": "Languages",
+                "description": "These are some programming languages i learn and work with."
+            }
+        }
+
     }
 }

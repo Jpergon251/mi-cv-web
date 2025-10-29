@@ -5,7 +5,7 @@
 
       <div class="profile-details">
         <!-- <h1 class="profile-name">Developer Snake</h1> -->
-        <h1 class="profile-name">Jose Antonio Pérez González</h1>
+        <h1 class="profile-name">{{ $t('profile.name') }}</h1>
         <h2 class="profile-title">{{ $t('profile.title') }}</h2>
         <h2 class="profile-title">{{ $t('profile.languages') }}</h2>
       </div>  

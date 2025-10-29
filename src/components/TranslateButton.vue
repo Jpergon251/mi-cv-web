@@ -2,8 +2,8 @@
   <div class="language-selector-fixed">
     <label for="language-select" class="language-label">{{ $t('translate-button') }} <Languages class="language-icon" /></label>
     <select v-model="locale" @change="changeLanguage" id="language-select" class="language-select">
-      <option value="es" class="language-option">{{ $t('languages.es') }}</option>
-      <option value="en" class="language-option">{{ $t('languages.en') }}</option>
+      <option value="es" class="language-option">{{ $t('languages.name.es') }}</option>
+      <option value="en" class="language-option">{{ $t('languages.name.en') }}</option>
     </select>
   </div>
 </template>

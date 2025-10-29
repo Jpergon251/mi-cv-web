@@ -1,14 +1,20 @@
 {
     "profile": {
         "name": "José Antonio Pérez González",
-        "title": "Desarrollador especializado en Videojuegos y en aplicaciones web",
+        "title": "Desarrollador web full-stack y especializado en videojuegos y realidad virtual",
         "description": "Soy un desarrollador con formación en aplicaciones web y especialización en videojuegos y realidad virtual.",
         "languages": "Idiomas: 🇪🇸 Español (Nativo), 🇬🇧 Inglés"
     },
     "translate-button": "Traducir",
     "languages": {
-        "es": "Español",
-        "en": "Inglés"
+       "name":{
+            "es": "Español",
+            "en": "Inglés"
+        },
+        "description":{
+            "es": "Traducción al español",
+            "en": "Translate to English"
+        }
     },
     "contact-title": "Contacto y perfiles",
     "about-me": {
@@ -66,7 +72,17 @@
     },
     "languages-card": {
         "title": "Idiomas",
-        "description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma. Además, tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
+        "spanish": {
+            "name": "🇪🇸 Español",
+            "level": "Nativo",
+            "description": "Tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
+        },
+        "english": {
+            "name": "🇬🇧 Inglés",
+            "level": "Avanzado",
+            "description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma."
+        },
+        "description": "Estos son los idiomas que manejo y mi nivel en cada uno de ellos."
     },
     "skills": {
         "title": "Habilidades y tecnologías",
@@ -82,6 +98,20 @@
                 "description": "Experiencia en el uso de <strong>herramientas con IA ejecutadas en local</strong> para optimizar flujos de trabajo, acelerar <strong>procesos creativos</strong> y generar <strong>prototipos funcionales</strong> sin depender de servicios en la nube."
             }
         }
+    },
+    "frameworks": {
+        "title": "Frameworks y lenguajes",
+        "subtitle":{
+            "frameworks": {
+                "name": "Frameworks",
+                "description": "Herramientas y librerías que utilizo para desarrollar aplicaciones y videojuegos."
+            },
+            "languages": {
+                "name": "Lenguajes",
+                "description": "Lenguajes de programación que utilizo para desarrollar aplicaciones y videojuegos."
+            }
+        }
+
     }
 
 }

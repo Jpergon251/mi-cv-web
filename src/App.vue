@@ -12,8 +12,10 @@
         <!-- Puedes añadir más tarjetas aquí -->
       </div>
       <div class="column">
-        <ProyectosVideojuegos class="vue-component proyectos-component videogames-list card"/>
+        <Frameworks class="vue-component frameworks-component card"/>
         <Competencias class="vue-component competencias-component card"/>
+        <ProyectosVideojuegos class="vue-component proyectos-component videogames-list card"/>
+        
         <!-- <ProyectosPaginas class="vue-component proyectos-component pages-list card"/> -->
         <!-- <Contacto class="vue-component contacto-component card"/> -->
         <!-- Puedes añadir más tarjetas aquí -->
@@ -35,5 +37,6 @@ import ProyectosPaginas from './components/ProyectosPaginas.vue'
 import Idiomas from './components/Idiomas.vue'
 import Competencias from './components/Competencias.vue'
 import Experiencia from './components/Experiencia.vue'
+import Frameworks from './components/Frameworks.vue'
 
 </script>
