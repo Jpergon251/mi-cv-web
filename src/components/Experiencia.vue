@@ -5,7 +5,7 @@
       <li class="experience-item">
         <div class="experience-header">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4E0BAQHctuQQkkvKrw/company-logo_200_200/company-logo_200_200/0/1685094608359/controlnetspain_logo?e=1757548800&v=beta&t=E4dI29pXT-1RFcoNsYhCbHIAM5X6gVFnXTzL-rlLuuY"
+            src="https://media.licdn.com/dms/image/v2/D4E0BAQHctuQQkkvKrw/company-logo_200_200/company-logo_200_200/0/1685094608359/controlnetspain_logo?e=1764201600&v=beta&t=ZXVIcgtIk5_cg5e7KHUGXccX2hiO5R5N7NSJKmuupPY"
             alt="ControlNet"
             class="company-logo"
           />

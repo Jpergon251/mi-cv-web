@@ -55,16 +55,33 @@
         "games": [
             {
                 "name": "Midnight Gallery",
-                "description": "Midnight Gallery is a 2D platformer with puzzle elements in which you play as Kassia, a daring adventurer exploring the darkest and most mysterious corners of history. Her goal is to recover forgotten relics and treasures to enrich a museum dedicated to preserving humanity’s legacy. Throughout her journey, Kassia will face physical challenges, puzzles, and traps that will test her wit and skills."
+                "description": "Midnight Gallery is a 2D platformer with puzzle elements in which you play as Kassia, a daring adventurer exploring the darkest and most mysterious corners of history. Her goal is to recover forgotten relics and treasures to enrich a museum dedicated to preserving humanity’s legacy. Throughout her journey, Kassia will face physical challenges, puzzles, and traps that will test her wit and skills.",
+                "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
+                "url": "https://karambitstudios.itch.io/midnight-gallery",
+                "engine": "Godot"
             },
             {
                 "name": "Los Giros",
-                "description": "Los Giros is a game where the world is in 3D, but both the enemies and the environments are represented in 2D. You play as John Colt, a bounty hunter who must eliminate all enemies standing in his way."
+                "description": "Los Giros is a game where the world is in 3D, but both the enemies and the environments are represented in 2D. You play as John Colt, a bounty hunter who must eliminate all the enemies that stand in his way.",
+                "image": "https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
+                "url": "https://karambitstudios.itch.io/los-giros",
+                "engine": "Unity"
             },
             {
-                "name": "GlobRush",
-                "description": "In this game, the character’s organs play a key role in the difficulty. Each organ has an “oxygen” percentage, and if it drops below a certain level, “negative effects” are triggered that increase the challenge of the game."
+            "name": "GlobRush",
+            "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
+            "description": "In this game, the character’s organs play a key role in the difficulty. Each organ has an “oxygen” percentage, and if it drops below a certain level, “negative effects” are triggered that increase the challenge of the game.",
+            "url":"https://francescovr.itch.io/globrush",
+            "engine": "Godot"
+            },
+            {
+            "name": "Purity",
+            "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
+            "description": "It is a mini-game that consists of helping others to solve their problems, represented by leeches, but helping those leeches consumes you.",
+            "url":"https://developersnake.itch.io/purity",
+            "engine": "Godot"
             }
+
         ]
     },
     "languages-card": {

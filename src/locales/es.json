@@ -55,19 +55,33 @@
         "games": [
             {
             "name": "Midnight Gallery",
+            "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
             "description": "Midnight Gallery es un plataformero 2D con elementos de puzle en el que encarnas a Kassia, una intrépida aventurera que explora los rincones más oscuros y misteriosos de la historia. Su objetivo es recuperar reliquias y tesoros olvidados para enriquecer un museo que busca preservar el legado de la humanidad. A lo largo de su viaje, Kassia deberá enfrentarse a desafíos físicos, acertijos y trampas que pondrán a prueba su ingenio y habilidades.",
+            "url":"https://karambitstudios.itch.io/midnight-gallery",
             "engine": "Godot"
-        },
+            },
             {
             "name": "Los Giros",
+            "image": "https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
             "description": "Los Giros es un juego en el que el mundo está en 3D, pero tanto los enemigos como los escenarios están representados en 2D. Encarnas a John Colt, un cazarrecompensas que debe eliminar a todos los enemigos que se interponen en su camino.",
+            "url":"https://karambitstudios.itch.io/los-giros",
             "engine": "Unity"
-        },
+            },
             {
             "name": "GlobRush",
+            "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
             "description": "En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida.",
+            "url":"https://francescovr.itch.io/globrush",
+            "engine": "Godot"
+            },
+            {
+            "name": "Purity",
+            "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
+            "description": "Es un minijuego que consiste en ayudar a los demas a resolver sus problemas, representados por sanguijueglas, pero al ayudarles esas sanguijuelas te consumen a ti.",
+            "url":"https://developersnake.itch.io/purity",
             "engine": "Godot"
             }
+
         ]
     },
     "languages-card": {
