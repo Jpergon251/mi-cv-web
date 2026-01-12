@@ -65,8 +65,8 @@ import { jsPDF } from "jspdf";
 // Método para descargar el CV
 const descargarCV = () => {
   const link = document.createElement("a");
-  link.href = "/Files/CV.pdf"; // ruta dentro de /public
-  link.download = "CV.pdf";
+  link.href = "/Files/CV-Jose-Antonio-Perez-Gonzalez.pdf"; // ruta dentro de /public
+  link.download = "CV-Jose-Antonio-Perez-Gonzalez.pdf";
   link.click();
 };
 useTilt('.tilt')
