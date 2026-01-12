@@ -65,8 +65,8 @@ import { jsPDF } from "jspdf";
 // Método para descargar el CV
 const descargarCV = () => {
   const link = document.createElement("a");
-  link.href = "/Files/Curriculum José_Antonio_Pérez_González_2025.pdf"; // ruta dentro de /public
-  link.download = "Curriculum José_Antonio_Pérez_González_2025.pdf";
+  link.href = "/Files/CV.pdf"; // ruta dentro de /public
+  link.download = "CV.pdf";
   link.click();
 };
 useTilt('.tilt')
