@@ -69,7 +69,7 @@
             rel="noopener"            
             class="project-title"
           >
-            {{ game.name }} <img :src="`/src/assets/icons/${game.engine.toLowerCase()}-icon.png`" :alt="game.engine" class="engine-icon" />
+            {{ game.name }} <img :src="`/icons/${game.engine.toLowerCase()}-icon.png`" :alt="game.engine" class="engine-icon" />
           </a>
           <p class="project-description" v-html="game.description">
           </p>
