@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './style.scss'
+import './styles/main.scss'
 import * as lucide from 'lucide-vue-next'
 import { i18n } from './i18n'
 

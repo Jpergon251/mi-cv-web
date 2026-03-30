@@ -21,10 +21,34 @@
         "title": "Sobre mí",
         "description": "Soy un <strong>desarrollador</strong> con formación en aplicaciones web y especialización en videojuegos y realidad virtual. Desde pequeño me apasionan la <strong>informática</strong>, los <strong>videojuegos</strong> y la tecnología."
     },
-    "education":{
+    "education": {
         "title": "Estudios",
-        "description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>Node.js</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>Kotlin</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
-        "description-2": "Más tarde cursé el <strong>Curso de Especialización en Videojuegos y Realidad Virtual</strong>, donde trabajé con <strong>Unity</strong> y <strong>Godot</strong>, programando en <strong>C#</strong> y <strong>GDScript</strong>, y creando experiencias en <strong>realidad virtual y mixta</strong>. Participé en proyectos colaborativos y en eventos como la <strong>Málaga Jam 2025</strong>."
+        "items": [
+            {
+            "date": "2019 - 2023",
+            "degree": "Grado Superior en Desarrollo de Aplicaciones Web",
+            "institution": "IES Rafael Alberti (Cádiz)",
+            "skills": [
+                "Frontend (Vue, React, JavaScript, HTML, CSS)",
+                "Backend (Node.js, PHP, Java, Python, Kotlin)",
+                "Bases de datos",
+                "APIs REST"
+            ]
+            },
+            {
+            "date": "2024 - 2025",
+            "degree": "Especialización en Desarrollo de Videojuegos y Realidad Virtual",
+            "institution": "IES Rafael Alberti (Cádiz)",
+            "skills": [
+                "Unity (C#)",
+                "Godot (GDScript)",
+                "Desarrollo de videojuegos",
+                "Realidad virtual y mixta",
+                "Trabajo en equipo",
+                "Game Jam (Málaga Jam 2025)"
+            ]
+            }
+        ]
     },
     "objectives": {
         "title": "Objetivos",

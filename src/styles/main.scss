@@ -486,6 +486,49 @@ body {
   }
 }
 
+//Estudios
+
+.education-item {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .education-skill-list{
+    list-style: none;
+    padding: 10;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .education-skill-item {
+      display: flex;
+      align-items: center;
+      font-weight: 100;
+      font-style: italic;
+      padding: 0.5rem 1rem;
+     
+    }
+  }
+  .institution a {
+    display: inline-block;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: inherit;
+    opacity: 0.7;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+}
+
 // Skills
 .skills-list {
   list-style: none;
