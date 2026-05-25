@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+
+    .main-nav {
+        a{
+             &:hover {
+                background-color: rgba(0, 0, 0, 0.215);
+                border-radius: 12px;
+            }   
+        }
+        a.router-link-active {
+            border-radius: 12px;
+            padding: 10px 15px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            
+        }
+        
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+
+
+        border-radius: 50%;
+        corner-shape: squircle;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            scale: 1.2;
+            transition: all 0.15s ease;
+        }
+    }
+
+
+}

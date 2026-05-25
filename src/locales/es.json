@@ -1,131 +1,19 @@
 {
-    "profile": {
-        "name": "José Antonio Pérez González",
-        "title": "Desarrollador web full-stack y especializado en videojuegos y realidad virtual",
-        "description": "Soy un desarrollador con formación en aplicaciones web y especialización en videojuegos y realidad virtual.",
-        "languages": "Idiomas: 🇪🇸 Español (Nativo), 🇬🇧 Inglés"
-    },
-    "translate-button": "Traducir",
-    "languages": {
-       "name":{
-            "es": "Español",
-            "en": "Inglés"
-        },
-        "description":{
-            "es": "Traducción al español",
-            "en": "Translate to English"
-        }
-    },
-    "contact-title": "Contacto y perfiles",
-    "about-me": {
-        "title": "Sobre mí",
-        "description": "Soy un <strong>desarrollador</strong> con formación en aplicaciones web y especialización en videojuegos y realidad virtual. Desde pequeño me apasionan la <strong>informática</strong>, los <strong>videojuegos</strong> y la tecnología."
-    },
-    "education":{
-        "title": "Estudios",
-        "description-1": "Estudié el <strong>Grado Superior de Desarrollo de Aplicaciones Web</strong> en el IES Rafael Alberti (Cádiz), donde aprendí <strong>frontend y backend</strong> con tecnologías como <strong>Node.js</strong>, <strong>JavaScript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>Python</strong>, <strong>Kotlin</strong> y frameworks como <strong>Vue</strong> y <strong>React</strong>.",
-        "description-2": "Más tarde cursé el <strong>Curso de Especialización en Videojuegos y Realidad Virtual</strong>, donde trabajé con <strong>Unity</strong> y <strong>Godot</strong>, programando en <strong>C#</strong> y <strong>GDScript</strong>, y creando experiencias en <strong>realidad virtual y mixta</strong>. Participé en proyectos colaborativos y en eventos como la <strong>Málaga Jam 2025</strong>."
-    },
-    "objectives": {
-        "title": "Objetivos",
-        "description": "Me interesa seguir creciendo como desarrollador en proyectos web o interactivos, combinando <strong>creatividad</strong>, <strong>tecnología</strong> y <strong>código limpio</strong>."
-    },
-    "availability": {
-        "title": "Disponibilidad",
-        "description": [
-            "Actualmente estoy <strong>disponible</strong> para nuevos proyectos y colaboraciones. Si tienes una idea interesante o necesitas un desarrollador para tu equipo, no dudes en contactarme.",
-            "Tengo disponibilidad para trabajar <strong>en remoto</strong> y con <strong>integración inmediata</strong>."
-        ]
-    },
-    "experience": {
-        "title": "Experiencia",
-        "description": "He trabajado en varios proyectos de desarrollo web y videojuegos, tanto de forma independiente como en equipo. Aquí tienes algunos ejemplos destacados:",
-        "works": {
-            "controlnet":{
-                "job-title": "Desarrollador de web",
-                "location": "Presencial · Jerez de la Frontera, Andalucía",
-                "date": "Oct. 2023 – Dic. 2023 · 3 meses",
-                "name": "ControlNet",
-                "tags": ["C#", "Razor Pages", "Diseño Web", "Aplicaciones Web", "Angular"]
-            }
-        }
-    },
-    "videogames": {
-        "title": "Videojuegos",
-        "games": [
-            {
-            "name": "Midnight Gallery",
-            "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
-            "description": "Midnight Gallery es un plataformero 2D con elementos de puzle en el que encarnas a Kassia, una intrépida aventurera que explora los rincones más oscuros y misteriosos de la historia. Su objetivo es recuperar reliquias y tesoros olvidados para enriquecer un museo que busca preservar el legado de la humanidad. A lo largo de su viaje, Kassia deberá enfrentarse a desafíos físicos, acertijos y trampas que pondrán a prueba su ingenio y habilidades.",
-            "url":"https://karambitstudios.itch.io/midnight-gallery",
-            "engine": "Godot"
-            },
-            {
-            "name": "Los Giros",
-            "image": "https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
-            "description": "Los Giros es un juego en el que el mundo está en 3D, pero tanto los enemigos como los escenarios están representados en 2D. Encarnas a John Colt, un cazarrecompensas que debe eliminar a todos los enemigos que se interponen en su camino.",
-            "url":"https://karambitstudios.itch.io/los-giros",
-            "engine": "Unity"
-            },
-            {
-            "name": "GlobRush",
-            "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
-            "description": "En este juego, los órganos del personaje juegan un papel clave en la dificultad. Cada órgano tiene un porcentaje de “oxígeno” y, si este baja de cierto nivel, se activan “efectos negativos” que aumentan la dificultad de la partida.",
-            "url":"https://francescovr.itch.io/globrush",
-            "engine": "Godot"
-            },
-            {
-            "name": "Purity",
-            "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
-            "description": "Es un minijuego que consiste en ayudar a los demas a resolver sus problemas, representados por sanguijueglas, pero al ayudarles esas sanguijuelas te consumen a ti.",
-            "url":"https://developersnake.itch.io/purity",
-            "engine": "Godot"
-            }
-
-        ]
-    },
-    "languages-card": {
-        "title": "Idiomas",
-        "spanish": {
-            "name": "🇪🇸 Español",
-            "level": "Nativo",
-            "description": "Tengo un nivel nativo de <strong>español</strong>, lo que me permite trabajar y colaborar en proyectos en este idioma sin problemas."
-        },
-        "english": {
-            "name": "🇬🇧 Inglés",
-            "level": "Avanzado",
-            "description": "Tengo un nivel avanzado de <strong>inglés</strong>, lo que me permite entender y comunicarme con fluidez en este idioma."
-        },
-        "description": "Estos son los idiomas que manejo y mi nivel en cada uno de ellos."
-    },
-    "skills": {
-        "title": "Habilidades y tecnologías",
-        "description": "Estas son algunas de las herramientas y tecnologías que manejo.",
-        "items":{
-            "blender": {
-                "description": "Algunos proyectos realizados con <strong>Blender</strong>."
-            },
-            "affinity": {
-                "description": "Algunos diseños hechos del videojuego de <strong>Los Giros</strong>."
-            },
-            "pinokio": {
-                "description": "Experiencia en el uso de <strong>herramientas con IA ejecutadas en local</strong> para optimizar flujos de trabajo, acelerar <strong>procesos creativos</strong> y generar <strong>prototipos funcionales</strong> sin depender de servicios en la nube."
-            }
-        }
-    },
-    "frameworks": {
-        "title": "Frameworks y lenguajes",
-        "subtitle":{
-            "frameworks": {
-                "name": "Frameworks",
-                "description": "Herramientas y librerías que utilizo para desarrollar aplicaciones y videojuegos."
-            },
-            "languages": {
-                "name": "Lenguajes",
-                "description": "Lenguajes de programación que utilizo para desarrollar aplicaciones y videojuegos."
-            }
-        }
-
+  "nav": {
+    "button-list": [
+        "Inicio",
+        "Experiencia",
+        "Educación",
+        "Habilidades",
+        "Certificados",
+        "Videojuegos"
+    ]
+  },
+    "language": {
+        "button": "Traducir",
+        "en": "Inglés",
+        "es": "Español"
     }
 
+  
 }

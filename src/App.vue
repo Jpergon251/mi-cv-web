@@ -1,42 +1,14 @@
 <template>
-  <div class="container">
-    <Header class="vue-component header-component"/>
-    <div class="columns">
-      <div class="column">
-        <SobreMi class="vue-component sobre-mi-component card"/>
-        <Estudios class="vue-component estudios-component card"/>
-        <Idiomas class="vue-component idiomas-component card"/>
-        <Objetivos class="vue-component objetivos-component card"/>
-        <Disponibilidad class="vue-component disponibilidad-component card"/>
-        <Experiencia class="vue-component experiencia-component card"/>
-        <!-- Puedes añadir más tarjetas aquí -->
-      </div>
-      <div class="column">
-        <Frameworks class="vue-component frameworks-component card"/>
-        <Competencias class="vue-component competencias-component card"/>
-        <ProyectosVideojuegos class="vue-component proyectos-component videogames-list card"/>
-        
-        <!-- <ProyectosPaginas class="vue-component proyectos-component pages-list card"/> -->
-        <!-- <Contacto class="vue-component contacto-component card"/> -->
-        <!-- Puedes añadir más tarjetas aquí -->
-      </div>
-    </div>
-  </div>
+
+<Header></Header>
+<router-view class="page-content"></router-view>
+<LanguageButton class="lang-btn"></LanguageButton>
+
 </template>
 
 <script setup>
 
-import Header from './components/Header.vue'
-import SobreMi from './components/SobreMi.vue'
-import Contacto from './components/Contacto.vue'
-import Estudios from './components/Estudios.vue'
-import Objetivos from './components/Objetivos.vue'
-import Disponibilidad from './components/Disponibilidad.vue'
-import ProyectosVideojuegos from './components/ProyectosVideojuegos.vue'
-import ProyectosPaginas from './components/ProyectosPaginas.vue'
-import Idiomas from './components/Idiomas.vue'
-import Competencias from './components/Competencias.vue'
-import Experiencia from './components/Experiencia.vue'
-import Frameworks from './components/Frameworks.vue'
+import Header from './layout/Header.vue'
+import LanguageButton from './components/LanguageButton.vue'
 
 </script>
