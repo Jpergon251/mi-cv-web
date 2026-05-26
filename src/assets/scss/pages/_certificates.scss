@@ -1,0 +1,91 @@
+.certificates{
+    .course-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    
+        
+        .course-item{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            width: 100%;
+            
+            .see-cert-button {
+                width: 100%;
+                margin-top: auto;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color .2s ease;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.75);
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+
+            .course-details{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .course-title{
+                    margin-bottom: 0.5rem;
+                }
+                .course-issuer{
+                    font-weight: bold;
+                    margin-bottom: 0.25rem;
+                }
+                .course-date{
+                    font-size: 0.9rem;
+                    color: rgba(0, 0, 0, 0.6);
+                    margin-bottom: 0.5rem;
+                }
+                .course-description{
+                    margin: 0.5rem 0;
+                }
+                .course-skills{
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    gap: 0.5rem;
+
+                    .skill{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        width: 60%;
+                        padding: .25rem .5rem;
+                    }
+
+                    .see-cert-button {
+                        width: 120px;
+                    }
+                }
+            }
+
+            .course-image {
+                flex: 1;
+                max-width: 350px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 12px;
+                    object-fit: contain;
+
+                    transition: transform .2s ease;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+}

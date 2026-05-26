@@ -10,5 +10,4 @@
 
 import Header from './layout/Header.vue'
 import LanguageButton from './components/LanguageButton.vue'
-
 </script>

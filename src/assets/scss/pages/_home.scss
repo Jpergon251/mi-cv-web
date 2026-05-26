@@ -1,0 +1,47 @@
+.home {
+
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .personal-info {
+        background: #fff;
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: 0.2s ease;
+            &:hover {
+                background: #f0f0f0;
+            }
+
+            .mail {
+                color: #d43838;
+            }
+            .whatsapp {
+                font-size: 24px;
+                color: #25D366;
+            }
+            .mappin {
+                color: #82d5ff;
+            }
+            .personal-link {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+}
