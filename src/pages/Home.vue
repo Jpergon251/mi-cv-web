@@ -7,7 +7,7 @@
         <section class="card personal-info">
             <h2>{{ $t('home.subtitle') }}</h2>
             <p class="name"><User class="personal-icon user" size="24" />{{ $t('home.name') }}</p>
-            <p class="email"><Mail class="personal-icon mail" size="24" /> <a class="personal-link email" href="joseperzant00@gmail.com">{{ $t('home.email') }}</a></p>
+            <p class="email"><Mail class="personal-icon mail" size="24" /> <a class="personal-link email" href="joseperzant00@gmail.com">{{ "joseperzant00@gmail.com" }}</a></p>
             <p class="phone"><i class="fa-brands fa-whatsapp personal-icon whatsapp" /> <a class="personal-link phone" :href="`https://wa.me/${$t('home.whatsapp')}`" target="_blank">{{ $t('home.phone') }}</a></p>
             <p class="location"><MapPin class="personal-icon mappin" size="24" /> {{ $t('home.location') }}</p>
         </section>
