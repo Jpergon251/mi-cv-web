@@ -1,0 +1,44 @@
+.education {
+    .education-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .education-item {
+        
+            align-items: center;
+            .institution-logo {
+                width: 100px;
+                height: 100px;
+                corner-shape: squircle;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+                object-fit: cover;
+                
+            }
+            .education-details {
+                .education-degree {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .education-institution {
+                    margin: 5px 0;
+                    a {
+                        color: #555;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .education-duration {
+                    font-size: 0.9em;
+                    color: #777;
+                }
+            }
+        }
+    }
+}

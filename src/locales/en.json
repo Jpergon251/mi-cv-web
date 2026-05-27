@@ -1,154 +1,295 @@
 {
-    "profile": {
-        "name": "José Antonio Pérez González",
-        "title": "Full-stack web developer and specialized in video games and virtual reality",
-        "description": "I am a developer with training in web applications and a specialization in video games and virtual reality.",
-        "languages": "Languages: 🇪🇸 Spanish (Native), 🇬🇧 English"
+    "nav": {
+        "buttonlist": [
+            "Home",
+            "Experience",
+            "Education",
+            "Skills",
+            "Certificates",
+            "Videogames"
+        ],
+      "burgertext": "Pages",
+      "concattext": "Contact"
     },
-    "translate-button": "Translate",
-    "languages": {
-        "name": {
-            "es": "Español",
-            "en": "English"
+    "language": {
+        "button": "Translate",
+        "en": "English",
+        "es": "Spanish"
+    },
+    "home": {
+        "title": "About me",
+        "description":{
+          "paragraph1": "Hello, I'm José Antonio Pérez González, I'm 26 years old and I'm a passionate software developer interested in web development, programming and creating interactive experiences.",
+          "paragraph2": "Since I was little I've liked the digital world and technology. I dedicate myself to learning programming and developing personal projects, especially related to videogames and software development.",
+          "paragraph3": "In my free time I enjoy both playing videogames and creating them. I'm passionate about technology and programming, I'm always learning new things and improving my skills."
         },
-        "description": {
-            "es": "Translate to Spanish",
-            "en": "Translate to English"
-        }
-    },
-    "contact-title": "Contact & Profiles",
-    "about-me": {
-        "title": "About Me",
-        "description": "I am a <strong>developer</strong> with training in web applications and a specialization in video games and virtual reality. Since childhood, I have been passionate about <strong>computing</strong>, <strong>video games</strong>, and technology."
+        "subtitle": "Personal Information",
+        "name": "José Antonio Pérez González",
+        "email": "joseperzant00@gmail.com",
+        "phone": "+34 601 25 15 37",
+        "whatsapp": "+34601251537",
+        "location": "Cadiz, Andalusia, Spain"
     },
     "education": {
-        "title": "Education",
-        "items": [
-            {
-                "date": "2019 - 2023",
-                "degree": "Higher Degree in Web Application Development",
-                "institution": "IES Rafael Alberti (Cádiz)",
-                "skills": [
-                    "Frontend (Vue, React, JavaScript, HTML, CSS)",
-                    "Backend (Node.js, PHP, Java, Python, Kotlin)",
-                    "Databases",
-                    "REST APIs"
-                ]
-            },
-            {
-                "date": "2024 - 2025",
-                "degree": "Specialization in Videogames and Virtual Reality Development",
-                "institution": "IES Rafael Alberti (Cádiz)",
-                "skills": [
-                    "Unity (C#)",
-                    "Godot (GDScript)",
-                    "Video game development",
-                    "Virtual and mixed reality",
-                    "Teamwork",
-                    "Game Jam (Málaga Jam 2025)"
-                ]
-            }
-        ]
-    },
-    "objectives": {
-        "title": "Objectives",
-        "description": "I am interested in continuing to grow as a developer in web or interactive projects, combining <strong>creativity</strong>, <strong>technology</strong>, and <strong>clean code</strong>."
-    },
-    "availability": {
-        "title": "Availability",
-        "description": [
-            "I am currently <strong>available</strong> for new projects and collaborations. If you have an interesting idea or need a developer for your team, feel free to contact me.",
-            "I am available for <strong>remote work</strong> and can <strong>integrate immediately</strong>."
-        ]
+      "title": "Education",
+      "items": [
+        {
+          "institution": "I.E.S. Rafael Alberti",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D03AQEUbHLEFFMErg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651731931203?e=1781136000&v=beta&t=XM4B2RwlcQ8foa000vJsQDr7JvVjieQlVGqsqM1992g",
+          "link": "https://www.iesrafaelalberti.es/",
+          "location": "Cadiz, Spain",
+          "degree": "High School Diploma in Technological Sciences",
+          "startDate": "September 2016",
+          "endDate": "June 2019",
+          "description": {}
+        },
+        {
+          "institution":"I.E.S. Rafael Alberti",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D03AQEUbHLEFFMErg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651731931203?e=1781136000&v=beta&t=XM4B2RwlcQ8foa000vJsQDr7JvVjieQlVGqsqM1992g",
+          "link": "https://www.iesrafaelalberti.es/",
+          "location": "Cadiz, Spain",
+          "degree": "Superior Degree in Web Application Development",
+          "startDate": "September 2019",
+          "endDate": "June 2024",
+          "description": {}
+        },
+        {
+          "institution":"I.E.S. Rafael Alberti",
+          "logo": "https://media.licdn.com/dms/image/v2/C4D03AQEUbHLEFFMErg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651731931203?e=1781136000&v=beta&t=XM4B2RwlcQ8foa000vJsQDr7JvVjieQlVGqsqM1992g",
+          "link": "https://www.iesrafaelalberti.es/",
+          "location": "Cadiz, Spain",
+          "degree": "Specialization Degree in Video Game Development and Virtual Reality",
+          "startDate": "October 2024",
+          "endDate": "June 2025",
+          "description": {}
+        }
+      ]
     },
     "experience": {
-        "title": "Experience",
-        "description": "I have worked on various web development and video game projects, both independently and in teams. Here are some highlighted examples:",
-        "works": {
-            "controlnet": {
-                "job-title": "Web Developer",
-                "location": "On-site · Jerez de la Frontera, Andalusia",
-                "date": "Oct. 2023 – Dec. 2023 · 3 months",
-                "name": "ControlNet",
-                "tags": ["C#", "Razor Pages", "Web Design", "Web Applications", "Angular"]
-            }
+      "title": "Professional experience",
+      "items": [
+        {
+          "company": "ControlNet",
+          "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHctuQQkkvKrw/company-logo_200_200/company-logo_200_200/0/1685094608359/controlnetspain_logo?e=1781136000&v=beta&t=1UmxJ58DxuUIIF2DfWcVN5mSwhHAT4SFuEFoKn4ryHs",
+          "link": "https://www.linkedin.com/company/controlnetspain/",
+          "location": "Jerez de la Frontera, Spain",
+          "position": "Web Developer (internship)",
+          "startDate": "October 2023",
+          "endDate": "December 2023",
+          "description": {
+            "paragraph1": "I participated in the development of internal projects using Razor and C#.",
+            "paragraph2": "I learned and worked with frontend technologies like Angular, gaining experience in professional development environments.",
+            "paragraph3": "I collaborated on programming tasks and improving functionalities within the team."
+          },
+          "technologies": [
+            "C#",
+            "Razor",
+            "Angular"
+          ]
         }
+      ]
     },
-    "videogames": {
-        "title": "Video Games",
-        "games": [
-            {
-                "name": "Midnight Gallery",
-                "description": "Midnight Gallery is a 2D platformer with puzzle elements in which you play as Kassia, a daring adventurer exploring the darkest and most mysterious corners of history. Her goal is to recover forgotten relics and treasures to enrich a museum dedicated to preserving humanity’s legacy. Throughout her journey, Kassia will face physical challenges, puzzles, and traps that will test her wit and skills.",
-                "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
-                "url": "https://karambitstudios.itch.io/midnight-gallery",
-                "engine": "Godot"
-            },
-            {
-                "name": "Los Giros",
-                "description": "Los Giros is a game where the world is in 3D, but both the enemies and the environments are represented in 2D. You play as John Colt, a bounty hunter who must eliminate all the enemies that stand in his way.",
-                "image": "https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
-                "url": "https://karambitstudios.itch.io/los-giros",
-                "engine": "Unity"
-            },
-            {
-            "name": "GlobRush",
-            "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
-            "description": "In this game, the character’s organs play a key role in the difficulty. Each organ has an “oxygen” percentage, and if it drops below a certain level, “negative effects” are triggered that increase the challenge of the game.",
-            "url":"https://francescovr.itch.io/globrush",
-            "engine": "Godot"
-            },
-            {
-            "name": "Purity",
-            "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
-            "description": "It is a mini-game that consists of helping others to solve their problems, represented by leeches, but helping those leeches consumes you.",
-            "url":"https://developersnake.itch.io/purity",
-            "engine": "Godot"
-            }
+  "skills": {
+    "title": "Skills",
+    "description": {
+      "paragraph1": "I have experience with many technologies, but I use most of them daily in my personal projects and studies."
+    },
+    "items": [
+      {
+        "name": "Frontend",
+        "technologies": [
+          {
+            "name": "HTML",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+          },
+          {
+            "name": "SCSS",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+          },
+          {
+            "name": "JavaScript",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          },
+          {
+            "name": "TypeScript",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+          },
+          {
+            "name": "React",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          },
+          {
+            "name": "Vue.js",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+          },
+          {
+            "name": "Angular",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+          }
+        ]
+      },
+      {
+        "name": "Backend",
+        "technologies": [
+          {
+            "name": "C#",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+          },
+          {
+            "name": "Python",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          },
+          {
+            "name": "Java",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+          },
+          {
+            "name": "Kotlin",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+          },
+          {
+            "name": "PHP",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+          },
+          {
+            "name": "Node.js",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          },
+          {
+            "name": "Spring Boot",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+          },
+          {
+            "name": "PostgreSQL",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+          },
+          {
+            "name": "MongoDB",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+          }
+        ]
+      },
+      {
+        "name": "Tools and technologies",
+        "technologies": [
+          {
+            "name": "Git",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+          },
+          {
+            "name": "Docker",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+          },
+          {
+            "name": "Figma",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+          },
+          {
+            "name": "Godot",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg"
+          },
+          {
+            "name": "Unity",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+          },
+          {
+            "name": "Blender",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
+          }
 
         ]
+      }
+    ]
+  },
+  "videogames":{
+    "title": "Videogames",
+    "description": {
+      "paragraph1": "This is a selection of the videogames I have developed, as in my studies and my personal projects."
     },
-    "languages-card": {
-        "title": "Languages",
-        "spanish": {
-            "name": "🇪🇸 Spanish",
-            "level": "Native",
-            "description": "I have a native level of <strong>Spanish</strong>, enabling me to work and collaborate on projects in this language without issues."
-        },
-        "english": {
-            "name": "🇬🇧 English",
-            "level": "Advanced",
-            "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language."
-        },
-        "description": "I have an advanced level of <strong>English</strong>, which allows me to understand and communicate fluently in this language."
+    "items":[
+      {
+        "name": "Midnight Gallery",
+        "description": "Is a 2D platformer game that combines puzzles, adventure and secrets in a world steeped in history and riddles.",
+        "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
+        "link": "https://karambitstudios.itch.io/midnight-gallery"
+      },
+      {
+        "name":"Los Giros",
+        "description":"It's a Wild West card game where you defeat 3 bosses. You'll have to make your way through the streets of Los Giros.",
+        "image":"https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
+        "link":"https://karambitstudios.itch.io/los-giros"
+      },
+      {
+        "name": "GlobRush",
+        "description": "A game inspired by the Human Body where oxygen is transported to the organs.",
+        "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
+        "link": "https://francescovr.itch.io/globrush"
+      },
+      {
+        "name": "Purity",
+        "description": "You decide if you help or not, this is purity.",
+        "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
+        "link": "https://developersnake.itch.io/purity"
+      }
+    ]
+  },
+  "certificates":{
+    "title": "Certificates",
+    "description": {
+      "paragraph1": "These are some of the certificates I have obtained throughout my education and professional experience."
     },
-    "skills": {
-        "title": "Skills & Technologies",
-        "description": "These are some of the tools and technologies I work with.",
-        "items": {
-            "blender": {
-                "description": "Some projects created with <strong>Blender</strong>."
-            },
-            "affinity": {
-                "description": "Some designs made for the game <strong>Los Giros</strong>."
-            },
-            "pinokio": {
-                "description": "Experience in using <strong>AI tools executed locally</strong> to optimize workflows, accelerate <strong>creative processes</strong>, and generate <strong>functional prototypes</strong> without relying on cloud services."
-            }
-        }
-    },
-    "frameworks": {
-        "title": "Frameworks & Technologies",
-        "subtitle":{
-            "frameworks": {
-                "name": "Frameworks",
-                "description": "These are some frameworks and technologies I work with."
-            },
-            "languages": {
-                "name": "Languages",
-                "description": "These are some programming languages I learn and work with."
-            }
-        }
+    "seecertbutton":"See certificate",
+    "seemorebutton":"See more",
+    "items":[
+      {
+        "title": "Google AI Professional Certificate",
+        "issuer": "Google / Coursera",
+        "date": "2026-05-15",
+        "image": "/Files/Coursera Google AI.webp",
+        "credentialUrl": "https://coursera.org/verify/professional-cert/HOKLRS8PMWII",
+        "description": "Professional certificate from Google AI consisting of 7 courses focused on the practical use of artificial intelligence applied to work and development.",
+        "file":"/Files/Coursera Google AI.pdf",
+        "skills": [
+          "Prompt Engineering",
+          "Research",
+          "Data Analysis",
+          "Content Creation",
+          "AI App Building",
+          "Communication",
+          "Brainstorming"
+        ],
 
-    }
+        "courses": [
+          {
+            "title": "AI Fundamentals",
+            "file":"./Files/Coursera AI Fundamentals.pdf"
+          },
+          {
+            "title": "AI for Brainstorming and Planning",
+            "file":"/Files/Coursera AI for Brainstorming and Planning.pdf"
+          },
+          {
+            "title": "AI for Research and Insights",
+            "file":"/Files/Coursera AI for Research and Insights.pdf"
+          },
+          {
+            "title": "AI for Writing and Communicating",
+            "file":"/Files/Coursera AI for Writing and Communicating.pdf"
+          },
+          {
+            "title": "AI for Content Creation",
+            "file":"/Files/Coursera AI for Content Creation.pdf"
+          },
+          {
+            "title": "AI for Data Analysis",
+            "file":"/Files/Coursera AI for Data Analysis.pdf"
+          },
+          {
+            "title": "AI for App Building",
+            "file":"/ Files/Coursera AI for App Building.pdf"
+          }
+        ]
+      }
+    ]
+  }
 }

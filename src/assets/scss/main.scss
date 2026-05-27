@@ -1,0 +1,24 @@
+
+// base
+@use "base/reset";
+@use "base/typography";
+@use "base/global";
+
+// layout
+@use "layout/header";
+
+// components
+@use "components/languagebutton";
+
+// pages
+@use "pages/home";
+@use "pages/education";
+@use "pages/experience";
+@use "pages/skills";
+@use "pages/videogames";
+@use "pages/certificates";
+
+// abstracts 
+@use "abstracts/animations";
+@use "abstracts/variables";
+@use "abstracts/mixins";
