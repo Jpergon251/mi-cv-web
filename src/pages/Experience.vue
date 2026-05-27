@@ -4,7 +4,7 @@
         <ul class="experience-list">
             <li class="experience-item item-card" v-for="(job, index) in tm('experience.items')" :key="index">
                 <img :src="job.logo" alt="Company Logo" class="company-logo image-scaled tilt">
-                <section>
+                <section class="experience-info">
                     <h2 class="job-position">{{ job.position }}</h2>
                     <p class="job-company"><a :href="job.link" target="_blank" rel="noopener noreferrer">{{ job.company }}</a> - <span class="job-location">{{ job.location }}</span></p>
                     <p class="job-duration">{{ job.startDate }} - {{ job.endDate }}</p>

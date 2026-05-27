@@ -1,7 +1,3 @@
-// abstracts 
-@use "abstracts/animations";
-@use "abstracts/variables";
-@use "abstracts/mixins";
 
 // base
 @use "base/reset";
@@ -21,3 +17,8 @@
 @use "pages/skills";
 @use "pages/videogames";
 @use "pages/certificates";
+
+// abstracts 
+@use "abstracts/animations";
+@use "abstracts/variables";
+@use "abstracts/mixins";

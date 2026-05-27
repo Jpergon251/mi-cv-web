@@ -1,13 +1,15 @@
 {
   "nav": {
-    "button-list": [
+    "buttonlist": [
         "Inicio",
         "Experiencia",
         "Educación",
         "Habilidades",
         "Certificados",
         "Videojuegos"
-    ]
+    ],
+    "burgertext": "Paginas",
+    "concattext": "Contactar"
   },
   "language": {
       "button": "Traducir",
@@ -17,7 +19,7 @@
   "home": {
       "title": "Sobre mi",
       "description":{
-        "paragraph1": "Hola, soy José Antonio Pérez González,tengo 26 años y soy un apasionado desarrollador de software interesado en el desarrollo web, la programación y la creación de experiencias interactivas.",
+        "paragraph1": "Hola, soy José Antonio Pérez González, tengo 26 años y soy un apasionado desarrollador de software interesado en el desarrollo web, la programación y la creación de experiencias interactivas.",
         "paragraph2": "Desde pequeño me ha gustado el mundo digital y la tecnología. Me dedico a aprender programación y desarrollar proyectos personales, especialmente relacionados con videojuegos y desarrollo de software.",
         "paragraph3": "En mi tiempo libre disfruto tanto jugando videojuegos como creándolos. Me apasiona la tecnología y la programación, siempre estoy aprendiendo cosas nuevas y mejorando mis habilidades."
       },

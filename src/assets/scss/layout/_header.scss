@@ -1,10 +1,12 @@
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
+    padding: 10px 10px;
     background-color: #ffffff;
     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+
+    .burger-page-menu-button,.contact-menu-button {
+        display: none;
+    }
 
     .main-nav {
         a{
@@ -26,10 +28,39 @@
     .profile-picture {
         width: 80px;
         height: 80px;
+        margin: 0 20px;
         border-radius: 50%;
         corner-shape: squircle;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
 
+    .social-nav {
+
+        a {
+            color: #000000;
+            font-size: 20px;
+            transition: color 0.3s;
+
+            .fa-linkedin:hover {
+                color: #0077b5;
+            }
+            .fa-github:hover {
+                color: #333;
+            }
+            .fa-envelope:hover {
+                color: #D44638;
+            }
+            .fa-whatsapp:hover {
+                color: #25d366;
+            }
+            .fa-itch-io:hover {
+                color: #fa5c5c;
+            }
+
+            i {
+                font-size: 32px;
+            }
+        }
+    }
 
 }

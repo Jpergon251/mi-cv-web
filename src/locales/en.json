@@ -1,13 +1,15 @@
 {
     "nav": {
-        "button-list": [
+        "buttonlist": [
             "Home",
             "Experience",
             "Education",
             "Skills",
             "Certificates",
             "Videogames"
-        ]
+        ],
+      "burgertext": "Pages",
+      "concattext": "Contact"
     },
     "language": {
         "button": "Translate",
@@ -168,7 +170,7 @@
         ]
       },
       {
-        "name": "Herramientas y metodologías",
+        "name": "Tools and technologies",
         "technologies": [
           {
             "name": "Git",
@@ -236,8 +238,8 @@
     "description": {
       "paragraph1": "These are some of the certificates I have obtained throughout my education and professional experience."
     },
-    "seecertbutton":"See Certificate",
-    "seemorebutton":"See More",
+    "seecertbutton":"See certificate",
+    "seemorebutton":"See more",
     "items":[
       {
         "title": "Google AI Professional Certificate",

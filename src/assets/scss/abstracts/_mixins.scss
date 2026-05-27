@@ -1,0 +1,137 @@
+/**Components
+*/
+// Header
+@media (max-width: 1200px) {
+    .header {
+        width: 100%;
+        .burger-page-menu-button, .contact-menu-button {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: none;
+            border: none;
+            font-size: 24px;
+            width: 100%;
+            gap: 10px;
+            span {
+                font-size: 18px;
+                margin-left: 8px 0;
+            }
+            i{
+                margin-left: 8px;
+                font-size: 24px;
+            }
+        }
+        .hidden-nav {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            width: 33%;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 8px 8px;
+            padding: 10px 0;
+            z-index: 1000;
+            a{
+                
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-radius: 12px;
+                }
+                &.router-link-active {
+                    border-radius: 12px;
+                    padding: 10px 15px;
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+        .contact-menu-nav{
+            right: 10px;
+            a{
+                width: 80%;
+                padding: 2px 0;
+                display: flex;
+            }
+        }
+        .link-menu-nav{
+            left: 10px;
+        }
+
+        .main-nav, .social-nav {
+            display: none;
+        }
+    }
+}
+
+/**Pages
+*/
+// Experience
+@media (max-width: 1200px) {
+
+    .experience{
+        .experience-list{
+            .experience-item{
+                .company-logo{
+                    display: none;
+                }
+                .experience-info{
+                    .job-position{
+                        font-size: 20px;
+                    }
+                    .job-company{
+                        font-size: 16px;
+                    }
+                    .job-duration{
+                        font-size: 14px;
+                    }
+                    .job-description{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// Videogames
+
+
+// Certificates
+@media (max-width: 1200px) {
+    .certificates {
+        .course-list {
+            flex-direction: column;
+            align-items: center;
+
+            .course-item {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                .course-details {
+                    .course-skills {
+                        width: 100%;
+                        justify-content: space-around;
+                        .skill {
+                            text-align: left;
+                            .course-title {
+                                width: 60%;
+                            }
+                            button {
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}

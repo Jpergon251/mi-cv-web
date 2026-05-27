@@ -40,8 +40,10 @@
               v-for="(course, i) in certificate.courses"
               :key="i"
             >
-              {{ course.title }}
-              
+              <span class="course-title">
+                {{ course.title }}
+              </span>
+
               <button class="see-cert-button" @click="openCertificate(course)">
                 {{ $t('certificates.seecertbutton') }}
               </button>
