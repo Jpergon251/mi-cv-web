@@ -1,66 +1,314 @@
 .header {
+    position: relative;
     display: flex;
-    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
     background-color: #ffffff;
     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
 
-    .burger-page-menu-button,.contact-menu-button {
+    // ======================
+    // BOTONES MOBILE
+    // ======================
+    .burger-page-menu-button,
+    .contact-menu-button {
         display: none;
+        align-items: center;
+        gap: 8px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 20px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        span {
+            font-size: 16px;
+            white-space: nowrap;
+        }
+
+        i {
+            font-size: 22px;
+        }
     }
 
+    // ======================
+    // NAV PRINCIPAL
+    // ======================
     .main-nav {
-        a{
-             &:hover {
-                background-color: rgba(0, 0, 0, 0.215);
-                border-radius: 12px;
-            }   
-        }
-        a.router-link-active {
-            border-radius: 12px;
-            padding: 10px 15px;
-            background-color: rgb(0, 0, 0);
-            color: white;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
 
+        a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: black;
+            border-radius: 12px;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+
+            &.router-link-active {
+                background-color: black;
+                color: white;
+            }
         }
-        
     }
 
+    // ======================
+    // FOTO PERFIL
+    // ======================
     .profile-picture {
         width: 80px;
         height: 80px;
         margin: 0 20px;
         border-radius: 50%;
         corner-shape: squircle;
+        object-fit: cover;
+        flex-shrink: 0;
+
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
 
+    // ======================
+    // REDES SOCIALES
+    // ======================
     .social-nav {
+        display: flex;
+        gap: 20px;
 
         a {
-            color: #000000;
-            font-size: 20px;
-            transition: color 0.3s;
+            color: #000;
+            transition:
+                transform 0.2s ease,
+                color 0.2s ease;
+            &:hover {
+                transform: scale(1.1);
 
-            .fa-linkedin:hover {
-                color: #0077b5;
-            }
-            .fa-github:hover {
-                color: #333;
-            }
-            .fa-envelope:hover {
-                color: #D44638;
-            }
-            .fa-whatsapp:hover {
-                color: #25d366;
-            }
-            .fa-itch-io:hover {
-                color: #fa5c5c;
+                .fa-linkedin {
+                    color: #0077b5;
+                }
+
+                .fa-github {
+                    color: #333;
+                }
+
+                .fa-envelope {
+                    color: #D44638;
+                }
+
+                .fa-whatsapp {
+                    color: #25d366;
+                }
+
+                .fa-itch-io {
+                    color: #fa5c5c;
+                }
             }
 
+            .social-label {
+                display: none;
+            }
             i {
                 font-size: 32px;
+            }
+
+            
+        }
+    }
+
+    // ======================
+    // TABLET / MOBILE
+    // ======================
+    @media (max-width: 1200px) {
+
+        .burger-page-menu-button,
+        .contact-menu-button {
+            display: flex;
+            z-index: 20;
+        }
+
+        // NAVS CERRADOS
+        .main-nav,
+        .social-nav {
+            display: none;
+
+            position: absolute;
+            top: calc(100% + 10px);
+
+            flex-direction: column;
+            gap: 6px;
+
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+
+            padding: 12px;
+            z-index: 100;
+
+            animation: dropdownOpen .25s ease;
+            
+
+        }
+
+        .main-nav {
+            left: 10px;
+            width: 240px;
+        }
+
+        .social-nav {
+            right: 10px;
+            width: 220px;
+            a {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                .social-label{
+                    display: inline;
+                    width: 100%;
+                    text-align: center;
+                    color: black;
+                }
+                i {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        // NAVS ABIERTOS
+        .main-nav.open,
+        .social-nav.open {
+            display: flex;
+        }
+    }
+
+    // ======================
+    // MOBILE PEQUEÑO
+    // ======================
+    @media (max-width: 600px) {
+
+        padding: 10px 12px;
+        
+
+        // Solo iconos
+        .contact-text,
+        .burger-page-menu-button span {
+            display: none;
+        }
+
+        .burger-page-menu-button,
+        .contact-menu-button {
+            padding: 8px;
+            min-width: 44px;
+            min-height: 44px;
+            justify-content: center;
+
+            i {
+                font-size: 24px;
+            }
+        }
+
+        // Foto más compacta
+        .profile-picture {
+            width: 52px;
+            height: 52px;
+            margin: 0;
+        }
+
+        // Menús ocupan casi toda la pantalla
+        .main-nav,
+        .social-nav {
+            width: calc(100vw - 24px);
+            max-width: unset;
+            top: calc(100% + 8px);
+
+            padding: 14px;
+            border-radius: 18px;
+
+            a {
+                width: 100%;
+                text-align: center;
+                padding: 14px 12px;
+                font-size: 16px;
+
+                .social-label {
+                    display: inline;
+                    font-size: 16px;
+                    color: black;
+                }
+
+            }
+        }
+
+        .main-nav {
+            left: 12px;
+        }
+
+        .social-nav {
+            right: 12px;
+
+            a {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                .social-label{
+                    width: 100%;
+                    text-align: center;
+                }
+                i {
+                    font-size: 28px;
+                }
             }
         }
     }
 
+    @media (max-width: 400px) {
+        .profile-picture {
+            width: 46px;
+            height: 46px;
+        }
+
+        .burger-page-menu-button,
+        .contact-menu-button {
+            i {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.header-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(6px);
+
+    z-index: 50;
+}
+
+@keyframes dropdownOpen {
+    from {
+        opacity: 0;
+        transform:
+            translateY(-10px)
+            scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
 }
