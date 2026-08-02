@@ -291,5 +291,13 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "createdByStart": "Created by ",
+    "createdByEnd": " - 2026",
+    "share": "Share",
+    "copied": "Link copied",
+    "shareText": "Take a look at José Antonio Pérez González's CV"
   }
 }

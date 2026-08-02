@@ -1,4 +1,9 @@
 
+// abstracts
+@use "abstracts/variables";
+@use "abstracts/animations";
+@use "abstracts/mixins";
+
 // base
 @use "base/reset";
 @use "base/typography";
@@ -6,6 +11,7 @@
 
 // layout
 @use "layout/header";
+@use "layout/footer";
 
 // components
 @use "components/languagebutton";
@@ -17,8 +23,3 @@
 @use "pages/skills";
 @use "pages/videogames";
 @use "pages/certificates";
-
-// abstracts 
-@use "abstracts/animations";
-@use "abstracts/variables";
-@use "abstracts/mixins";

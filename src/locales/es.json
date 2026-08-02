@@ -291,6 +291,14 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "builtWith": "Hecho con",
+    "createdByStart": "Creado por ",
+    "createdByEnd": " - 2026",
+    "share": "Compartir",
+    "copied": "Enlace copiado",
+    "shareText": "Echa un vistazo al CV de José Antonio Pérez González"
   }
 
 }

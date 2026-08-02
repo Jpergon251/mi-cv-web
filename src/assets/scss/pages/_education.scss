@@ -14,7 +14,7 @@
                 height: 100px;
                 corner-shape: squircle;
                 border-radius: 50%;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+                box-shadow: var(--shadow-sm);
                 object-fit: cover;
                 
             }
@@ -27,7 +27,7 @@
                 .education-institution {
                     margin: 5px 0;
                     a {
-                        color: #555;
+                        color: var(--color-text-secondary);
                         text-decoration: none;
                         &:hover {
                             text-decoration: underline;
@@ -36,7 +36,7 @@
                 }
                 .education-duration {
                     font-size: 0.9em;
-                    color: #777;
+                    color: var(--color-text-muted);
                 }
             }
         }

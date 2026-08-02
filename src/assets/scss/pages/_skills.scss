@@ -38,7 +38,7 @@
                     }
 
                     .tech-name{
-                        background: #f0f0f0;
+                        background: var(--color-surface-muted);
                         padding: 5px 10px;
                         border-radius: 15px;
                     }
@@ -46,13 +46,13 @@
                     &:hover{
                         transform: scale(1.1);
                         transition: transform 0.15s ease;
-                        background: #1b1b1b;
+                        background: var(--color-text-primary);
                         .tech-name{
-                            color: white;
-                            background: #1b1b1b;
+                            color: var(--color-surface);
+                            background: var(--color-text-primary);
                         }
                         .tech-logo{
-                            background: white;
+                            background: var(--color-surface);
                             border-radius: 50%;
                             corner-shape: squircle;
                         }
