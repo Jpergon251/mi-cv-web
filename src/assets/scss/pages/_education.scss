@@ -15,7 +15,7 @@
                 corner-shape: squircle;
                 border-radius: 50%;
                 box-shadow: var(--shadow-sm);
-                object-fit: cover;
+                object-fit: contain;
                 
             }
             .education-details {
