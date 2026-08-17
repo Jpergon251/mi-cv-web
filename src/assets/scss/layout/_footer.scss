@@ -1,61 +1,217 @@
+// ==========================================================
+// FOOTER
+// ==========================================================
+
 .app-footer {
+    width: 100%;
     margin-top: auto;
-    padding: 1.5rem 1.25rem;
+    padding: var(--space-xl) var(--space-lg);
 
     .footer-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: .35rem;
+
+        width: 100%;
+        max-width: var(--content-max-width);
+        margin: 0 auto;
+
+        gap: var(--space-sm);
+
         text-align: center;
     }
 
+    // ======================================================
+    // TEXT
+    // ======================================================
+
     p {
-        margin: 0;
         color: var(--color-text-muted);
-        font-size: .9rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
+
+    // ======================================================
+    // BUILT WITH
+    // ======================================================
 
     .built-with {
         display: inline-flex;
         align-items: center;
-        gap: .35rem;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        strong { color: var(--color-text); }
+        gap: 0.4rem;
+
+        strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
 
         img {
-            width: 1.2rem;
-            height: 1.2rem;
+            width: 1.25rem;
+            height: 1.25rem;
+
+            object-fit: contain;
+
+            flex-shrink: 0;
         }
     }
 
+    // ======================================================
+    // AUTHOR
+    // ======================================================
+
     .author-link {
         color: var(--color-text-secondary);
-        text-decoration: underline;
-        text-underline-offset: 2px;
 
-        &:hover,
-        &:focus-visible { color: var(--color-linkedin); }
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+
+        transition:
+            color var(--transition-fast),
+            text-decoration-color var(--transition-fast);
+
+        &:hover {
+            color: var(--color-linkedin);
+            text-decoration-color: var(--color-linkedin);
+        }
+
+        &:focus-visible {
+            color: var(--color-linkedin);
+            outline: 2px solid var(--color-linkedin);
+            outline-offset: 3px;
+            border-radius: var(--radius-sm);
+        }
     }
+
+    // ======================================================
+    // SHARE BUTTON
+    // ======================================================
 
     .share-button {
         display: inline-flex;
         align-items: center;
-        gap: .45rem;
-        margin-top: .4rem;
-        padding: .45rem .75rem;
-        color: var(--color-text-secondary);
-        background: transparent;
-        border: 1px solid var(--color-border);
-        border-radius: 6px;
-        cursor: pointer;
-        font: inherit;
-        font-size: .85rem;
+        justify-content: center;
 
-        &:hover,
-        &:focus-visible {
+        gap: 0.5rem;
+
+        min-height: 40px;
+        margin-top: var(--space-xs);
+        padding: 0.6rem 1rem;
+
+        color: var(--color-text-secondary);
+        background-color: transparent;
+
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+
+        font: inherit;
+        font-size: 0.875rem;
+        line-height: 1;
+
+        cursor: pointer;
+
+        transition:
+            color var(--transition-fast),
+            background-color var(--transition-fast),
+            border-color var(--transition-fast),
+            box-shadow var(--transition-fast),
+            transform var(--transition-fast);
+
+        i {
+            font-size: 0.85rem;
+            line-height: 1;
+        }
+
+        &:hover {
             color: var(--color-text);
-            background: var(--color-surface-muted);
+            background-color: var(--color-surface-muted);
+            border-color: var(--color-text-muted);
+
+            box-shadow: var(--shadow-sm);
+
+            transform: translateY(-1px);
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--color-text);
+            outline-offset: 2px;
+        }
+    }
+}
+
+// ==========================================================
+// TABLET
+// ==========================================================
+
+@media (max-width: 768px) {
+    .app-footer {
+        padding: var(--space-xl) var(--space-md);
+
+        .footer-content {
+            gap: var(--space-sm);
+        }
+    }
+}
+
+// ==========================================================
+// MOBILE
+// ==========================================================
+
+@media (max-width: 480px) {
+    .app-footer {
+        padding: var(--space-lg) var(--space-md);
+
+        .footer-content {
+            gap: 0.4rem;
+        }
+
+        p {
+            max-width: 320px;
+            font-size: 0.85rem;
+        }
+
+        .built-with {
+            line-height: 1.5;
+
+            img {
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+        }
+
+        .share-button {
+            width: 100%;
+            max-width: 240px;
+            min-height: 44px;
+
+            margin-top: var(--space-sm);
+        }
+    }
+}
+
+// ==========================================================
+// VERY SMALL DEVICES
+// ==========================================================
+
+@media (max-width: 360px) {
+    .app-footer {
+        padding-inline: var(--space-sm);
+
+        p {
+            max-width: 280px;
+            font-size: 0.8rem;
+        }
+
+        .share-button {
+            max-width: 220px;
         }
     }
 }

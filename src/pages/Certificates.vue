@@ -1,11 +1,11 @@
 <template>
   <div class="certificates">
     <h1 class="title">
-      {{ $t('certificates.title') }}
+      {{ $t("certificates.title") }}
     </h1>
 
     <p class="description">
-      {{ $t('certificates.description.paragraph1') }}
+      {{ $t("certificates.description.paragraph1") }}
     </p>
 
     <ul class="course-list">
@@ -31,10 +31,7 @@
             {{ certificate.description }}
           </p>
 
-          <ul
-            class="course-skills"
-            v-if="certificate.courses"
-          >
+          <ul class="course-skills" v-if="certificate.courses">
             <li
               class="skill"
               v-for="(course, i) in certificate.courses"
@@ -45,7 +42,7 @@
               </span>
 
               <button class="see-cert-button" @click="openCertificate(course)">
-                {{ $t('certificates.seecertbutton') }}
+                {{ $t("certificates.seecertbutton") }}
               </button>
             </li>
           </ul>
@@ -58,11 +55,8 @@
             class="certificate-image image-scaled tilt"
           />
 
-          <button
-            class="see-cert-button"
-            @click="openCertificate(certificate)"
-          >
-            {{ $t('certificates.seecertbutton') }}
+          <button class="see-cert-button" @click="openCertificate(certificate)">
+            {{ $t("certificates.seecertbutton") }}
           </button>
         </section>
       </li>
@@ -71,22 +65,22 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-import { useTilt } from '../scripts/useTilt.js'
+import { useI18n } from "vue-i18n";
+import { useTilt } from "../scripts/useTilt.js";
 
-const { tm } = useI18n()
+const { tm } = useI18n();
 
-const baseUrl = import.meta.env.BASE_URL
+const baseUrl = import.meta.env.BASE_URL;
 
 const getFileUrl = (path) => {
-  if (!path) return ''
+  if (!path) return "";
 
-  return `${baseUrl}${path.replace(/^\/+/, '')}`
-}
+  return `${baseUrl}${path.replace(/^\/+/, "")}`;
+};
 
 function openCertificate(certificate) {
-  window.open(getFileUrl(certificate.file), '_blank')
+  window.open(getFileUrl(certificate.file), "_blank");
 }
 
-useTilt('.tilt')
+useTilt(".tilt");
 </script>

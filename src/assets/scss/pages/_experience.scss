@@ -1,70 +1,485 @@
-.experience{
+// ==========================================================
+// EXPERIENCE
+// ==========================================================
 
-    .experience-list{
-        list-style: none;
-        padding: 0;
-        margin: 0;
+.experience {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    // ======================================================
+    // TÍTULO
+    // ======================================================
+
+    .title {
+        margin: 0 0 var(--space-xl);
+
+        color: var(--color-text);
+
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+    }
+
+    // ======================================================
+    // LISTA
+    // ======================================================
+
+    .experience-list {
         display: flex;
         flex-direction: column;
-        gap: 20px;
 
-        .experience-item{
-           
-            align-items: center;
-            .company-logo{
-                width: 100px;
-                height: 100px;
-                corner-shape: squircle;
-                border-radius: 50%;
-                box-shadow: var(--shadow-sm);
-                object-fit: contain;
-                
-            }
-            .job-title{
-                font-size: 1.5em;
-                margin-bottom: 10px;
-            }
+        gap: var(--space-lg);
 
-            .job-company{
-                font-size: 1.2em;
-                margin-bottom: 5px;
-                color: var(--color-text-secondary);
-                a{
-                    color: var(--color-text-secondary);
-                    text-decoration: none;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-                .job-location{
-                    font-size: 0.9em;
-                    color: var(--color-text-muted);
-                }
-            }
+        margin: 0;
+        padding: 0;
 
-            .job-duration{
-                font-size: 1em;
-                margin-bottom: 15px;
-                
-            }
-            .job-description{
-                font-size: 1em;
-                .paragraph{
-                    margin-bottom: 10px;
-                }
-            }
-            .job-technologies{
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                list-style: none;
-                .technology{
-                    background: var(--color-surface-subtle);
-                    padding: 5px 10px;
-                    border-radius: 4px;
-                    font-size: 0.9em;
-                }
+        list-style: none;
+    }
+
+    // ======================================================
+    // TARJETA DE EXPERIENCIA
+    // ======================================================
+
+    .experience-item {
+        display: flex;
+        align-items: flex-start;
+
+        gap: var(--space-xl);
+
+        width: 100%;
+        min-width: 0;
+
+        padding: clamp(1.25rem, 3vw, 2rem);
+
+        background: var(--color-surface);
+
+        border-radius: var(--radius-lg);
+
+        box-shadow: var(--shadow-sm);
+
+        transition:
+            transform var(--transition-normal),
+            box-shadow var(--transition-normal),
+            border-color var(--transition-normal);
+
+        &:hover {
+            transform: translateY(-2px);
+
+            box-shadow: var(--shadow-md);
+
+            border-color: var(
+                --color-border-hover,
+                var(--color-border)
+            );
+
+            .company-logo {
+                transform: scale(1.04);
             }
         }
+    }
+
+    // ======================================================
+    // LOGO
+    // ======================================================
+
+    .company-logo {
+        display: block;
+
+        width: 90px;
+        height: 90px;
+
+        flex: 0 0 90px;
+
+        padding: 8px;
+
+        object-fit: contain;
+
+        background: var(--color-surface);
+
+        border: 1px solid var(--color-border);
+        border-radius: 50%;
+
+        box-shadow: var(--shadow-sm);
+
+        transition:
+            transform var(--transition-normal),
+            box-shadow var(--transition-normal);
+
+        // Mantiene el logo visible mientras se hace scroll
+        // en tarjetas largas.
+        position: sticky;
+        top: var(--space-lg);
+    }
+
+    // ======================================================
+    // INFORMACIÓN
+    // ======================================================
+
+    .experience-info {
+        min-width: 0;
+        flex: 1;
+    }
+
+    // ======================================================
+    // PUESTO
+    // ======================================================
+
+    .job-position {
+        margin: 0;
+
+        color: var(--color-text);
+
+        font-size: clamp(1.25rem, 3vw, 1.6rem);
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+    }
+
+    // ======================================================
+    // EMPRESA / UBICACIÓN
+    // ======================================================
+
+    .job-company {
+        margin: 0.45rem 0 0;
+
+        color: var(--color-text-secondary);
+
+        font-size: 1rem;
+        line-height: 1.5;
+
+        a {
+            color: var(--color-text-secondary);
+
+            text-decoration: none;
+
+            transition:
+                color var(--transition-fast);
+
+            &:hover {
+                color: var(--color-text);
+
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--color-text);
+                outline-offset: 3px;
+
+                border-radius: var(--radius-sm);
+            }
+        }
+    }
+
+    .job-location {
+        color: var(--color-text-muted);
+
+        font-size: 0.9em;
+    }
+
+    // ======================================================
+    // DURACIÓN
+    // ======================================================
+
+    .job-duration {
+        display: inline-flex;
+        align-items: center;
+
+        margin: 0.7rem 0 0;
+
+        padding: 0.35rem 0.7rem;
+
+        color: var(--color-text-muted);
+
+        background: var(--color-surface-muted);
+
+        border-radius: var(--radius-md);
+
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+
+    // ======================================================
+    // DESCRIPCIÓN
+    // ======================================================
+
+    .job-description {
+        margin-top: var(--space-lg);
+
+        color: var(--color-text-secondary);
+
+        font-size: 0.95rem;
+        line-height: 1.7;
+
+        .paragraph {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-bottom: var(--space-md);
+            }
+        }
+    }
+
+    // ======================================================
+    // TECNOLOGÍAS
+    // ======================================================
+
+    .job-technologies {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        gap: 0.5rem;
+
+        margin: var(--space-lg) 0 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    .technology {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 30px;
+
+        padding: 0.3rem 0.7rem;
+
+        color: var(--color-text-secondary);
+
+        background: var(--color-surface-muted);
+
+        border-radius: var(--radius-md);
+
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1;
+
+        transition:
+            color var(--transition-fast),
+            background-color var(--transition-fast),
+            border-color var(--transition-fast),
+            transform var(--transition-fast);
+
+        &:hover {
+            color: var(--color-text);
+
+            background: var(--color-hover);
+
+            border-color: var(--color-border-hover, var(--color-border));
+
+            transform: translateY(-1px);
+        }
+    }
+}
+
+// ==========================================================
+// TABLET
+// ==========================================================
+
+@media (max-width: 768px) {
+
+    .experience {
+
+        .title {
+            margin-bottom: var(--space-lg);
+        }
+
+        .experience-list {
+            gap: var(--space-md);
+        }
+
+        .experience-item {
+            gap: var(--space-lg);
+
+            padding: var(--space-lg);
+        }
+
+        .company-logo {
+            width: 70px;
+            height: 70px;
+
+            flex-basis: 70px;
+
+            padding: 6px;
+
+            position: static;
+        }
+
+        .job-position {
+            font-size: 1.2rem;
+        }
+
+        .job-company {
+            font-size: 0.9rem;
+        }
+
+        .job-description {
+            font-size: 0.9rem;
+            line-height: 1.65;
+        }
+    }
+}
+
+// ==========================================================
+// MOBILE
+// ==========================================================
+
+@media (max-width: 600px) {
+
+    .experience {
+
+        .title {
+            font-size: clamp(1.8rem, 9vw, 2.4rem);
+        }
+
+        .experience-list {
+            gap: var(--space-md);
+        }
+
+        .experience-item {
+            flex-direction: column;
+            align-items: center;
+
+            gap: var(--space-md);
+
+            padding: 1.25rem;
+
+            text-align: center;
+
+            border-radius: var(--radius-md);
+        }
+
+        // ==================================================
+        // LOGO
+        // ==================================================
+
+        .company-logo {
+            width: 72px;
+            height: 72px;
+
+            flex-basis: 72px;
+
+            padding: 6px;
+
+            position: static;
+        }
+
+        // ==================================================
+        // INFORMACIÓN
+        // ==================================================
+
+        .experience-info {
+            width: 100%;
+        }
+
+        .job-position {
+            font-size: 1.15rem;
+            line-height: 1.35;
+        }
+
+        .job-company {
+            margin-top: 0.4rem;
+
+            font-size: 0.9rem;
+        }
+
+        .job-location {
+            font-size: 0.9em;
+        }
+
+        .job-duration {
+            margin-top: 0.6rem;
+
+            font-size: 0.75rem;
+        }
+
+        // ==================================================
+        // DESCRIPCIÓN
+        // ==================================================
+
+        .job-description {
+            margin-top: var(--space-md);
+
+            font-size: 0.9rem;
+            line-height: 1.65;
+
+            .paragraph:not(:last-child) {
+                margin-bottom: var(--space-sm);
+            }
+        }
+
+        // ==================================================
+        // TECNOLOGÍAS
+        // ==================================================
+
+        .job-technologies {
+            justify-content: center;
+
+            gap: 0.4rem;
+
+            margin-top: var(--space-md);
+        }
+
+        .technology {
+            min-height: 28px;
+
+            padding: 0.3rem 0.6rem;
+
+            font-size: 0.75rem;
+        }
+    }
+}
+
+// ==========================================================
+// MOBILE PEQUEÑO
+// ==========================================================
+
+@media (max-width: 400px) {
+
+    .experience {
+
+        .experience-item {
+            padding: 1rem;
+        }
+
+        .company-logo {
+            width: 60px;
+            height: 60px;
+
+            flex-basis: 60px;
+        }
+
+        .job-position {
+            font-size: 1.05rem;
+        }
+
+        .job-company {
+            font-size: 0.825rem;
+        }
+
+        .job-description {
+            font-size: 0.85rem;
+        }
+
+        .technology {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+// ==========================================================
+// REDUCIR ANIMACIONES
+// ==========================================================
+
+@media (prefers-reduced-motion: reduce) {
+
+    .experience,
+    .experience * {
+        transition: none !important;
     }
 }

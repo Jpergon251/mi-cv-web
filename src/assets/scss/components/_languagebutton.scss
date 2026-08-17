@@ -1,41 +1,205 @@
+// ==========================================================
+// LANGUAGE SELECTOR
+// ==========================================================
+
 .lang-selector {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    z-index: 1000;
 }
+
+// ==========================================================
+// BOTÓN PRINCIPAL
+// ==========================================================
 
 .toggle {
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: none;
-  background: var(--color-text);
-  color: var(--color-surface);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: 0.2s ease;
+    padding: 10px 14px;
+
+    border-radius: 12px;
+    border: none;
+
+    background: var(--color-text);
+    color: var(--color-surface);
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font: inherit;
+
+    transition: 0.2s ease;
+
+    .icon {
+        width: 18px;
+        height: 18px;
+
+        flex-shrink: 0;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 3px;
+    }
 }
 
-.toggle:hover {
-  transform: scale(1.05);
-}
+// ==========================================================
+// MENÚ
+// ==========================================================
 
 .menu {
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+    margin-top: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    button {
+        padding: 8px 12px;
+
+        border-radius: 10px;
+        border: 1px solid var(--color-border);
+
+        background: var(--color-surface);
+
+        cursor: pointer;
+
+        font: inherit;
+
+        transition:
+            background-color 0.2s ease,
+            transform 0.2s ease;
+
+        &:hover {
+            background: var(--color-surface-subtle);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--color-text);
+            outline-offset: 2px;
+        }
+    }
 }
 
-.menu button {
-  padding: 8px 12px;
-  border-radius: 10px;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  cursor: pointer;
+// ==========================================================
+// TABLET
+// ==========================================================
+
+@media (max-width: 768px) {
+
+    .lang-selector {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .toggle {
+        padding: 9px 13px;
+
+        .icon {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    .menu {
+        gap: 5px;
+
+        button {
+            padding: 8px 11px;
+        }
+    }
 }
 
-.menu button:hover {
-  background: var(--color-surface-subtle);
+// ==========================================================
+// MOBILE
+// ==========================================================
+
+@media (max-width: 600px) {
+
+    .lang-selector {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .toggle {
+        padding: 9px 12px;
+
+        border-radius: 10px;
+
+        font-size: 0.9rem;
+
+        .icon {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    .menu {
+        margin-top: 6px;
+
+        gap: 5px;
+
+        button {
+            padding: 8px 10px;
+
+            border-radius: 9px;
+
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// ==========================================================
+// MOBILE PEQUEÑO
+// ==========================================================
+
+@media (max-width: 400px) {
+
+    .lang-selector {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .toggle {
+        padding: 8px 11px;
+
+        font-size: 0.85rem;
+
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .menu {
+
+        button {
+            padding: 7px 9px;
+
+            font-size: 0.85rem;
+        }
+    }
+}
+
+// ==========================================================
+// REDUCIR ANIMACIONES
+// ==========================================================
+
+@media (prefers-reduced-motion: reduce) {
+
+    .lang-selector,
+    .lang-selector * {
+        transition: none !important;
+    }
 }

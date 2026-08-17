@@ -30,7 +30,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 const isCopied = ref(false)
 const shareLabel = computed(() => t(isCopied.value ? 'footer.copied' : 'footer.share'))
-const portfolioUrl = 'https://joseantonioperezcurriculum.netlify.app/'
+const portfolioUrl = window.location.href
 
 const sharePage = async () => {
   const shareData = {

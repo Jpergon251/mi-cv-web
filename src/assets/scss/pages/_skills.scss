@@ -1,64 +1,360 @@
-.skills{
-    
-    .skills-list{
+// ==========================================================
+// SKILLS
+// ==========================================================
+
+.skills {
+  // ======================================================
+  // DESCRIPCIÓN
+  // ======================================================
+
+  .description {
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  // ======================================================
+  // LISTA DE HABILIDADES
+  // ======================================================
+
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  // ======================================================
+  // CATEGORÍA
+  // ======================================================
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    background: var(--color-surface);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+      box-shadow var(--transition-normal),
+      transform var(--transition-normal),
+      border-color var(--transition-normal);
+
+    &:hover {
+      transform: translateY(-2px);
+
+      border-color: var(--color-text-muted);
+
+      box-shadow: var(--shadow-md);
+    }
+
+    // ==================================================
+    // NOMBRE DE LA CATEGORÍA
+    // ==================================================
+
+    .skill-name {
+      align-self: flex-start;
+
+      margin: 0;
+
+      font-size: 1.4rem;
+      font-weight: 700;
+
+      color: var(--color-text);
+    }
+
+    // ==================================================
+    // TECNOLOGÍAS
+    // ==================================================
+
+    .skill-techs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+
+      width: 100%;
+
+      margin: 10px 0 0;
+      padding: 0;
+
+      gap: 18px;
+
+      list-style: none;
+
+      // ==================================================
+      // TECNOLOGÍA
+      // ==================================================
+
+      .tech-item {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        .skill-item{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+        align-items: center;
+        justify-content: center;
 
-            .skill-name{
-                align-self: start;
-            }
+        flex: 0 1 100px;
 
-            .skill-techs{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 90%;
-                margin: 10px auto;
-                gap: 20px;
+        min-width: 90px;
+        min-height: 120px;
 
-                transition: transform 0.15s ease;
-                li{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 5px;
-                    border-radius: 8px;
-                    gap: 15px;
+        padding: 10px;
 
-                    .tech-logo{
-                        width: 60px;
-                        height: 60px;
-                        padding: 2px;
-                    }
+        gap: 12px;
 
-                    .tech-name{
-                        background: var(--color-surface-muted);
-                        padding: 5px 10px;
-                        border-radius: 15px;
-                    }
+        background: transparent;
 
-                    &:hover{
-                        transform: scale(1.1);
-                        transition: transform 0.15s ease;
-                        background: var(--color-text-primary);
-                        .tech-name{
-                            color: var(--color-surface);
-                            background: var(--color-text-primary);
-                        }
-                        .tech-logo{
-                            background: var(--color-surface);
-                            border-radius: 50%;
-                            corner-shape: squircle;
-                        }
-                    }
-                }
-            }
+        border-radius: var(--radius-md);
+
+        cursor: default;
+
+        transition:
+          transform var(--transition-fast),
+          background-color var(--transition-fast),
+          box-shadow var(--transition-fast);
+
+        // ==================================================
+        // LOGO
+        // ==================================================
+
+        .tech-logo {
+          display: block;
+
+          width: 60px;
+          height: 60px;
+
+          padding: 2px;
+
+          object-fit: contain;
+
+          transition:
+            transform var(--transition-fast),
+            background-color var(--transition-fast),
+            border-radius var(--transition-fast);
         }
+
+        // ==================================================
+        // NOMBRE
+        // ==================================================
+
+        .tech-name {
+
+          padding: 5px 10px;
+
+          color: var(--color-text);
+
+          font-size: 0.9rem;
+          line-height: 1.2;
+
+          text-align: center;
+
+          background: var(--color-surface-muted);
+
+          border-radius: 15px;
+
+
+          transition:
+            color var(--transition-fast),
+            background-color var(--transition-fast);
+        }
+
+        // ==================================================
+        // HOVER
+        // ==================================================
+
+        &:hover {
+          transform: scale(1.08);
+
+          background: var(--color-text);
+
+          .tech-logo {
+            background: var(--color-surface);
+
+            border-radius: 50%;
+            corner-shape: squircle;
+
+            transform: scale(1.05);
+          }
+
+          .tech-name {
+            color: var(--color-surface);
+
+            background: var(--color-text-primary);
+          }
+        }
+      }
     }
+  }
+}
+
+// ==========================================================
+// TABLET
+// ==========================================================
+
+@media (max-width: 768px) {
+  .skills {
+    .description {
+      font-size: 1.1rem;
+    }
+
+    .skill-item {
+      padding: 18px;
+
+      .skill-name {
+        font-size: 1.3rem;
+      }
+
+      .skill-techs {
+        gap: 14px;
+
+        .tech-item {
+          flex-basis: 90px;
+
+          min-width: 80px;
+          min-height: 110px;
+
+          .tech-logo {
+            width: 55px;
+            height: 55px;
+          }
+
+          .tech-name {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================
+// MOBILE
+// ==========================================================
+
+@media (max-width: 600px) {
+  .skills {
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .skills-list {
+      gap: 16px;
+    }
+
+    .skill-item {
+      padding: 16px;
+
+      border-radius: var(--radius-md);
+
+      // Evitamos que la card se mueva en dispositivos táctiles
+      &:hover {
+        transform: none;
+      }
+
+      .skill-name {
+        font-size: 1.2rem;
+      }
+
+      .skill-techs {
+        gap: 10px;
+
+        .tech-item {
+          flex: 0 1 80px;
+
+          min-width: 75px;
+          min-height: 105px;
+
+          padding: 8px;
+
+          gap: 10px;
+
+          &:hover {
+            transform: scale(1.03);
+          }
+
+          .tech-logo {
+            width: 50px;
+            height: 50px;
+          }
+
+          .tech-name {
+            padding: 4px 8px;
+
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================
+// MÓVIL PEQUEÑO
+// ==========================================================
+
+@media (max-width: 400px) {
+  .skills {
+    .skill-item {
+      padding: 14px;
+
+      .skill-name {
+        font-size: 1.1rem;
+      }
+
+      .skill-techs {
+        gap: 8px;
+
+        .tech-item {
+          flex-basis: 72px;
+
+          min-width: 70px;
+          min-height: 95px;
+
+          padding: 6px;
+
+          gap: 8px;
+
+          .tech-logo {
+            width: 44px;
+            height: 44px;
+          }
+
+          .tech-name {
+            padding: 4px 6px;
+
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================
+// REDUCIR ANIMACIONES
+// ==========================================================
+
+@media (prefers-reduced-motion: reduce) {
+  .skills,
+  .skills * {
+    transition: none !important;
+  }
 }
