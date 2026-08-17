@@ -52,17 +52,11 @@
         </section>
 
         <section class="course-image">
-          <a
-            :href="getFileUrl(certificate.pdf)"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              :src="getFileUrl(certificate.image)"
-              alt="Certificate Image"
-              class="certificate-image image-scaled tilt"
-            >
-          </a>
+          <img
+            :src="getFileUrl(certificate.image)"
+            alt="Certificate Image"
+            class="certificate-image image-scaled tilt"
+          />
 
           <button
             class="see-cert-button"
@@ -79,12 +73,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useTilt } from '../scripts/useTilt.js'
-const { tm } = useI18n()
-useTilt('.tilt')
 
-function openCertificate(certificate) {
-  window.open(certificate.file, '_blank')
-}
+const { tm } = useI18n()
 
 const baseUrl = import.meta.env.BASE_URL
 
@@ -93,4 +83,10 @@ const getFileUrl = (path) => {
 
   return `${baseUrl}${path.replace(/^\/+/, '')}`
 }
+
+function openCertificate(certificate) {
+  window.open(getFileUrl(certificate.file), '_blank')
+}
+
+useTilt('.tilt')
 </script>
