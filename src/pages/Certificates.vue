@@ -53,12 +53,12 @@
 
         <section class="course-image">
           <a
-            :href="certificate.pdf"
+            :href="getFileUrl(certificate.pdf)"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              :src="certificate.image"
+              :src="getFileUrl(certificate.image)"
               alt="Certificate Image"
               class="certificate-image image-scaled tilt"
             >
@@ -84,5 +84,13 @@ useTilt('.tilt')
 
 function openCertificate(certificate) {
   window.open(certificate.file, '_blank')
+}
+
+const baseUrl = import.meta.env.BASE_URL
+
+const getFileUrl = (path) => {
+  if (!path) return ''
+
+  return `${baseUrl}${path.replace(/^\/+/, '')}`
 }
 </script>
