@@ -22,7 +22,7 @@
   &__container {
     display: flex;
     align-items: center;
-
+    justify-content: space-around;
     width: min(100% - 64px, 1400px);
     height: 80px;
 
@@ -678,8 +678,6 @@
     }
 
     &__logo {
-      min-width: 0;
-      max-width: 190px;
 
       overflow: hidden;
 
@@ -733,7 +731,6 @@
 
   @media (max-width: 360px) {
     &__logo {
-      max-width: 155px;
 
       font-size: 0.9rem;
     }
