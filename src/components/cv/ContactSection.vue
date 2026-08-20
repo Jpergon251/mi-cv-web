@@ -120,7 +120,7 @@
           <!-- GitHub -->
 
           <a
-            href="https://github.com/"
+            href="https://github.com/Jpergon251"
             target="_blank"
             rel="noopener noreferrer"
             class="contact-section__item"
