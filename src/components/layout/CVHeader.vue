@@ -57,7 +57,11 @@
           >
             <span>{{ locale.toUpperCase() }}</span>
 
-            <svg
+            <ChevronUp
+            class="cv-header__language-icon"
+            aria-hidden="true"
+            />
+            <!-- <svg
               class="cv-header__language-icon"
               viewBox="0 0 16 16"
               fill="none"
@@ -70,7 +74,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </svg>
+            </svg> -->
           </button>
 
           <!-- Language dropdown -->
@@ -101,7 +105,7 @@
                   class="cv-header__language-check"
                   aria-hidden="true"
                 >
-                  ✓
+                  <Check class="icon"/>
                 </span>
               </button>
             </div>
@@ -156,6 +160,7 @@
 </template>
 
 <script setup>
+import { Check, ChevronUp } from 'lucide-vue-next'
 import {
   computed,
   onMounted,

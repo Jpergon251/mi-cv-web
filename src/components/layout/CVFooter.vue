@@ -48,17 +48,15 @@
           :disabled="isCopied"
           @click="sharePage"
         >
-          <i
-            v-if="!isCopied"
-            class="fas fa-share-nodes"
-            aria-hidden="true"
-          ></i>
+          <Share2 
+          class="icon"
+          v-if="!isCopied"
+          />
 
-          <i
+          <CopyCheck
+          class="icon"
             v-else
-            class="fas fa-check"
-            aria-hidden="true"
-          ></i>
+          />
 
           <span>
             {{ shareLabel }}
@@ -72,6 +70,7 @@
 </template>
 
 <script setup>
+import { CopyCheck, Share2 } from 'lucide-vue-next'
 import {
   computed,
   ref
