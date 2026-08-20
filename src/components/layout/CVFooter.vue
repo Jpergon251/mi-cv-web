@@ -44,10 +44,19 @@
         <button
           type="button"
           class="cv-footer__share"
+          :class="{ 'is-copied': isCopied }"
+          :disabled="isCopied"
           @click="sharePage"
         >
           <i
+            v-if="!isCopied"
             class="fas fa-share-nodes"
+            aria-hidden="true"
+          ></i>
+
+          <i
+            v-else
+            class="fas fa-check"
             aria-hidden="true"
           ></i>
 
@@ -78,6 +87,8 @@ const isCopied = ref(false)
 
 const currentYear = new Date().getFullYear()
 
+let copyTimeout = null
+
 const shareLabel = computed(() => {
   return t(
     isCopied.value
@@ -86,33 +97,102 @@ const shareLabel = computed(() => {
   )
 })
 
+// ==========================================================
+// SHARE
+// ==========================================================
+
 const sharePage = async () => {
-  const shareData = {
-    title: document.title,
-    text: t('footer.shareText'),
-    url: window.location.href
+  const url = window.location.href
+
+  // --------------------------------------------------------
+  // NATIVE SHARE
+  // --------------------------------------------------------
+
+  if (
+    typeof navigator.share === 'function' &&
+    window.isSecureContext
+  ) {
+    try {
+      await navigator.share({
+        title: document.title,
+        text: t('footer.shareText'),
+        url
+      })
+
+      return
+    } catch (error) {
+      if (error.name === 'AbortError') {
+        return
+      }
+
+      console.warn(
+        '[CVFooter] Error al abrir el menú de compartir:',
+        error
+      )
+    }
   }
+
+  // --------------------------------------------------------
+  // FALLBACK
+  // --------------------------------------------------------
 
   try {
-    if (navigator.share) {
-      await navigator.share(shareData)
-      return
-    }
+    await copyToClipboard(url)
 
-    await navigator.clipboard.writeText(
-      window.location.href
-    )
-
-    isCopied.value = true
-
-    window.setTimeout(() => {
-      isCopied.value = false
-    }, 2000)
-
+    showCopied()
   } catch (error) {
-    if (error.name !== 'AbortError') {
-      isCopied.value = false
-    }
+    console.error(
+      '[CVFooter] No se pudo copiar el enlace:',
+      error
+    )
   }
+}
+
+// ==========================================================
+// COPY
+// ==========================================================
+
+const copyToClipboard = async (text) => {
+  if (navigator.clipboard) {
+    await navigator.clipboard.writeText(text)
+
+    return
+  }
+
+  const textarea = document.createElement('textarea')
+
+  textarea.value = text
+
+  textarea.style.position = 'fixed'
+  textarea.style.left = '-9999px'
+
+  document.body.appendChild(textarea)
+
+  textarea.focus()
+  textarea.select()
+
+  const successful = document.execCommand('copy')
+
+  textarea.remove()
+
+  if (!successful) {
+    throw new Error('No se pudo copiar el enlace')
+  }
+}
+
+// ==========================================================
+// COPIED
+// ==========================================================
+
+const showCopied = () => {
+  isCopied.value = true
+
+  if (copyTimeout) {
+    clearTimeout(copyTimeout)
+  }
+
+  copyTimeout = window.setTimeout(() => {
+    isCopied.value = false
+  }, 2000)
 }
 </script>
