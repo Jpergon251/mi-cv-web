@@ -14,29 +14,15 @@
 @use "base/typography";
 @use "base/global";
 
+// Layout
+@use "components/layout/cvheader";
+@use "components/layout/cvfooter";
 
-// ==========================================================
-// LAYOUT
-// ==========================================================
-
-@use "layout/header";
-@use "layout/footer";
-
-
-// ==========================================================
-// COMPONENTS
-// ==========================================================
-
-@use "components/languagebutton";
-
-
-// ==========================================================
-// PAGES
-// ==========================================================
-
-@use "pages/home";
-@use "pages/education";
-@use "pages/experience";
-@use "pages/skills";
-@use "pages/videogames";
-@use "pages/certificates";
+// Components
+@use "components/cv/herosection";
+@use "components/cv/aboutsection";
+@use "components/cv/journeysection";
+@use "components/cv/skillssection";
+@use "components/cv/certificatessection";
+@use "components/cv/contactsection";
+@use "components/cv/projectssection";

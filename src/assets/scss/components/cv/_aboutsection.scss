@@ -1,0 +1,233 @@
+.about-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding: var(--space-3xl) 0;
+
+  background: var(--color-background);
+  color: var(--color-text);
+
+  // ==========================================================
+  // CONTAINER
+  // ==========================================================
+
+  &__container {
+    width: min(100%, var(--content-max-width));
+
+    min-height: calc(100vh - var(--header-height));
+
+    margin: 0 auto;
+    padding: var(--space-3xl) var(--space-xl);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  // ==========================================================
+  // HEADER
+  // ==========================================================
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-xl);
+
+    margin-bottom: auto;
+  }
+
+  &__number {
+    flex-shrink: 0;
+
+    padding-top: 0.35rem;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    color: var(--color-text);
+
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+  }
+
+  // ==========================================================
+  // CONTENT
+  // ==========================================================
+
+  &__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(250px, 0.75fr);
+    gap: clamp(var(--space-2xl), 8vw, 10rem);
+
+    margin-top: var(--space-3xl);
+  }
+
+  // ==========================================================
+  // DESCRIPTION
+  // ==========================================================
+
+  &__description {
+    max-width: 720px;
+  }
+
+  &__paragraph {
+    color: var(--color-text-secondary);
+
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    line-height: 1.8;
+
+    & + & {
+      margin-top: var(--space-lg);
+    }
+  }
+
+  // ==========================================================
+  // INTERESTS
+  // ==========================================================
+
+  &__interests {
+    display: flex;
+    flex-direction: column;
+
+    align-self: start;
+
+    width: 100%;
+
+    border-top: 1px solid var(--color-border);
+  }
+
+  &__interest {
+    display: flex;
+    align-items: center;
+
+    min-height: 58px;
+
+    padding: var(--space-md) 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    color: var(--color-text);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition:
+      padding var(--transition-normal),
+      color var(--transition-normal),
+      background-color var(--transition-normal);
+
+    &::before {
+      width: 0;
+      height: 1px;
+
+      margin-right: 0;
+
+      background: var(--color-text);
+
+      content: "";
+
+      transition:
+        width var(--transition-normal),
+        margin-right var(--transition-normal);
+    }
+
+    &:hover {
+      padding-left: var(--space-sm);
+
+      color: var(--color-text);
+
+      &::before {
+        width: 20px;
+
+        margin-right: var(--space-sm);
+      }
+    }
+  }
+
+  // ==========================================================
+  // TABLET
+  // ==========================================================
+
+  @media (max-width: 900px) {
+    &__container {
+      padding: var(--space-2xl) var(--space-lg);
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+
+      gap: var(--space-2xl);
+
+      margin-top: var(--space-2xl);
+    }
+
+    &__description {
+      max-width: 800px;
+    }
+
+    &__interests {
+      max-width: 600px;
+    }
+  }
+
+  // ==========================================================
+  // MOBILE
+  // ==========================================================
+
+  @media (max-width: 600px) {
+    min-height: auto;
+
+    padding: var(--space-2xl) 0;
+
+    &__container {
+      min-height: auto;
+
+      padding: var(--space-2xl) var(--space-md);
+    }
+
+    &__header {
+      gap: var(--space-md);
+
+      margin-bottom: var(--space-xl);
+    }
+
+    &__number {
+      padding-top: 0.2rem;
+
+      font-size: 0.75rem;
+    }
+
+    &__title {
+      font-size: clamp(2.5rem, 13vw, 4rem);
+    }
+
+    &__content {
+      gap: var(--space-xl);
+
+      margin-top: 0;
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+      line-height: 1.7;
+
+      & + & {
+        margin-top: var(--space-md);
+      }
+    }
+
+    &__interest {
+      min-height: 52px;
+
+      font-size: 0.9rem;
+    }
+  }
+}

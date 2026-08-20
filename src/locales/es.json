@@ -1,100 +1,127 @@
 {
-  "nav": {
-    "buttonlist": [
-        "Inicio",
-        "Experiencia",
-        "Educación",
-        "Habilidades",
-        "Certificados",
-        "Videojuegos"
-    ],
-    "burgertext": "Paginas",
-    "concattext": "Contactar"
-  },
-  "language": {
-      "button": "Traducir",
-      "en": "Inglés",
-      "es": "Español"
-  },
-  "home": {
-      "title": "Sobre mi",
-      "description":{
-        "paragraph1": "Hola, soy José Antonio Pérez González, tengo 26 años y soy un apasionado desarrollador de software interesado en el desarrollo web, la programación y la creación de experiencias interactivas.",
-        "paragraph2": "Desde pequeño me ha gustado el mundo digital y la tecnología. Me dedico a aprender programación y desarrollar proyectos personales, especialmente relacionados con videojuegos y desarrollo de software.",
-        "paragraph3": "En mi tiempo libre disfruto tanto jugando videojuegos como creándolos. Me apasiona la tecnología y la programación, siempre estoy aprendiendo cosas nuevas y mejorando mis habilidades."
-      },
-      "subtitle": "Información Personal",
-      "name": "José Antonio Pérez González",
-      "email": "joseperzant00@gmail.com",
-      "phone": "+34 601 25 15 37",
-      "whatsapp": "+34601251537",
-      "location": "Cadiz, Andalucía, España"
-  },
-  "education": {
-    "title": "Educación",
+  "navigation": {
+    "menu": "Menú",
     "items": [
       {
+        "label": "Sobre mí",
+        "target": "about"
+      },
+      {
+        "label": "Trayectoria",
+        "target": "journey"
+      },
+      {
+        "label": "Habilidades",
+        "target": "skills"
+      },
+      {
+        "label": "Proyectos",
+        "target": "projects"
+      },
+      {
+        "label": "Certificados",
+        "target": "certificates"
+      },
+      {
+        "label": "Contacto",
+        "target": "contact"
+      }
+    ]
+  },
+  "language": {
+    "button": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "José Antonio Pérez González",
+    "role": "Desarrollador de software",
+    "description": "Apasionado por el desarrollo web, la programación y la creación de experiencias interactivas.",
+    "scrollText": "Explorar CV",
+    "location": "Cádiz, Andalucía, España"
+  },
+  "about": {
+    "number": "01",
+    "title": "Sobre mí",
+    "description": {
+      "paragraph1": "Hola, soy José Antonio Pérez González, tengo 26 años y soy un apasionado desarrollador de software interesado en el desarrollo web, la programación y la creación de experiencias interactivas.",
+      "paragraph2": "Desde pequeño me ha gustado el mundo digital y la tecnología. Me dedico a aprender programación y desarrollar proyectos personales, especialmente relacionados con videojuegos y desarrollo de software.",
+      "paragraph3": "En mi tiempo libre disfruto tanto jugando videojuegos como creándolos. Me apasiona la tecnología y la programación, siempre estoy aprendiendo cosas nuevas y mejorando mis habilidades."
+    },
+    "interests": [
+      "Desarrollo web",
+      "Programación",
+      "Software",
+      "Videojuegos",
+      "Experiencias interactivas"
+    ]
+  },
+  "journey": {
+    "number": "02",
+    "title": "Mi trayectoria",
+    "description": "Un recorrido por mi formación y experiencia en el mundo del desarrollo.",
+    "items": [
+      {
+        "type": "education",
         "institution": "I.E.S. Rafael Alberti",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoz_PZKXFFevnOZlAuhWu5J4fobIUPCEX8L16UrK8Q6grM27xZq_rQ-sS&s=10",
         "link": "https://www.iesrafaelalberti.es/",
         "location": "Cádiz, España",
-        "degree": "Bachillerato en Ciencias Tecnológicas",
+        "title": "Bachillerato en Ciencias Tecnológicas",
         "startDate": "Septiembre 2016",
         "endDate": "Junio 2019",
-        "description": {}
+        "description": ""
       },
       {
-        "institution":"I.E.S. Rafael Alberti",
+        "type": "education",
+        "institution": "I.E.S. Rafael Alberti",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoz_PZKXFFevnOZlAuhWu5J4fobIUPCEX8L16UrK8Q6grM27xZq_rQ-sS&s=10",
         "link": "https://www.iesrafaelalberti.es/",
         "location": "Cádiz, España",
-        "degree": "Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web",
+        "title": "Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web",
         "startDate": "Septiembre 2019",
         "endDate": "Junio 2024",
-        "description": {}
+        "description": ""
       },
       {
-        "institution":"I.E.S. Rafael Alberti",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoz_PZKXFFevnOZlAuhWu5J4fobIUPCEX8L16UrK8Q6grM27xZq_rQ-sS&s=10",
-        "link": "https://www.iesrafaelalberti.es/",
-        "location": "Cádiz, España",
-        "degree": "Grado de especialización en Desarrollo de Videojuegos y Realidad Virtual",
-        "startDate": "Octubre 2024",
-        "endDate": "Junio 2025",
-        "description": {}
-      }
-    ]
-  },
-  "experience": {
-    "title": "Experiencia profesional",
-    "items": [
-      {
+        "type": "experience",
         "company": "ControlNet",
         "logo": "https://controlnet.es/wp-content/themes/desarrollo25/images/controlnet-logo-web.svg",
         "link": "https://www.linkedin.com/company/controlnetspain/",
         "location": "Jerez de la Frontera, España",
-        "position": "Desarrollador web (prácticas)",
+        "title": "Desarrollador web (prácticas)",
         "startDate": "Octubre 2023",
         "endDate": "Diciembre 2023",
-        "description": {
-          "paragraph1": "Participé en el desarrollo de proyectos internos utilizando Razor y C#.",
-          "paragraph2": "Aprendí y trabajé con tecnologías frontend como Angular, adquiriendo experiencia en entornos de desarrollo profesionales.",
-          "paragraph3": "Colaboré en tareas de programación y mejora de funcionalidades dentro del equipo."
-        },
+        "description": [
+          "Participé en el desarrollo de proyectos internos utilizando Razor y C#.",
+          "Aprendí y trabajé con tecnologías frontend como Angular, adquiriendo experiencia en entornos de desarrollo profesionales.",
+          "Colaboré en tareas de programación y mejora de funcionalidades dentro del equipo."
+        ],
         "technologies": [
           "C#",
           "Razor",
           "Angular"
         ]
+      },
+      {
+        "type": "education",
+        "institution": "I.E.S. Rafael Alberti",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoz_PZKXFFevnOZlAuhWu5J4fobIUPCEX8L16UrK8Q6grM27xZq_rQ-sS&s=10",
+        "link": "https://www.iesrafaelalberti.es/",
+        "location": "Cádiz, España",
+        "title": "Grado de especialización en Desarrollo de Videojuegos y Realidad Virtual",
+        "startDate": "Octubre 2024",
+        "endDate": "Junio 2025",
+        "description": ""
       }
     ]
   },
   "skills": {
+    "number": "03",
     "title": "Habilidades",
-    "description": {
-      "paragraph1": "Estas son muchas de las tecnologias que uso, no tengo la misma experiencia en todas pero la mayoria las uso a diario en mis proyectos personales y en mis estudios."
-    },
-    "items": [
+    "description": "Estas son algunas de las tecnologías que utilizo. No tengo el mismo nivel de experiencia en todas, pero muchas forman parte de mis proyectos personales, estudios y aprendizaje diario.",
+    "categories": [
       {
         "name": "Frontend",
         "technologies": [
@@ -115,12 +142,12 @@
             "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
           },
           {
-            "name": "React",
-            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-          },
-          {
             "name": "Vue.js",
             "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+          },
+          {
+            "name": "React",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
           },
           {
             "name": "Angular",
@@ -170,7 +197,7 @@
         ]
       },
       {
-        "name": "Herramientas y metodologías",
+        "name": "Herramientas y desarrollo",
         "technologies": [
           {
             "name": "Git",
@@ -196,51 +223,59 @@
             "name": "Blender",
             "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
           }
-
         ]
       }
     ]
   },
-  "videogames": {
-    "title": "Videojuegos",
-    "description": {
-      "paragraph1": "Estos son algunos de los videojuegos que he desarrollado, tanto proyectos personales como trabajos realizados durante mis estudios."
-    },
-    "items":[
-      {
-        "name": "Midnight Gallery",
-        "description": "Es un juego de plataformas 2D que combina acertijos, aventura y secretos en un mundo empapado en historia y enigmas.",
-        "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
-        "link": "https://karambitstudios.itch.io/midnight-gallery"
+  "projects": {
+    "number": "04",
+    "title": "Proyectos",
+    "description": "Una selección de proyectos personales, académicos y de desarrollo de videojuegos.",
+    "categories": {
+      "web": {
+        "title": "Desarrollo web",
+        "items": []
       },
-      {
-        "name":"Los Giros",
-        "description":"Es un juego de cartas del Salvaje Oeste donde debes derrotar a 3 jefes. Tendrás que abrirte camino por las calles de Los Giros.",
-        "image":"https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
-        "link":"https://karambitstudios.itch.io/los-giros"
-      },
-      {
-        "name":"GlobRush",
-        "description":"Un juego inspirado en el cuerpo humano donde el oxigeno es transportado hacia los organos.",
-        "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
-        "link": "https://francescovr.itch.io/globrush"
-      },
-      {
-        "name":"Purity",
-        "description":"Tú decides si ayudas o no, esta es la pureza.",
-        "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
-        "link": "https://developersnake.itch.io/purity"
+      "videogames": {
+        "title": "Videojuegos",
+        "items": [
+          {
+            "name": "Midnight Gallery",
+            "description": "Es un juego de plataformas 2D que combina acertijos, aventura y secretos en un mundo empapado en historia y enigmas.",
+            "image": "https://img.itch.zone/aW1nLzE4NzYzNzk0LnBuZw==/315x250%23c/VX%2FdVj.png",
+            "link": "https://karambitstudios.itch.io/midnight-gallery"
+          },
+          {
+            "name": "Los Giros",
+            "description": "Es un juego de cartas del Salvaje Oeste donde debes derrotar a 3 jefes. Tendrás que abrirte camino por las calles de Los Giros.",
+            "image": "https://img.itch.zone/aW1nLzE5Mzg0MjU5LmpwZw==/315x250%23c/KoHPVr.jpg",
+            "link": "https://karambitstudios.itch.io/los-giros"
+          },
+          {
+            "name": "GlobRush",
+            "description": "Un juego inspirado en el cuerpo humano donde el oxígeno es transportado hacia los órganos.",
+            "image": "https://img.itch.zone/aW1nLzE5NTMzNTYwLnBuZw==/315x250%23c/HtYpaL.png",
+            "link": "https://francescovr.itch.io/globrush"
+          },
+          {
+            "name": "Purity",
+            "description": "Tú decides si ayudas o no. Esta es la pureza.",
+            "image": "https://img.itch.zone/aW1nLzIzOTM5MzkyLnBuZw==/315x250%23c/c8r72Q.png",
+            "link": "https://developersnake.itch.io/purity"
+          }
+        ]
       }
-    ]
+    }
   },
-  "certificates":{
+  "certificates": {
+    "number": "05",
     "title": "Certificados",
-    "description": {
-      "paragraph1": "Estos son algunos de los certificados que he obtenido a lo largo de mi formación y experiencia profesional."
+    "description": "Estos son algunos de los certificados que he obtenido a lo largo de mi formación y experiencia profesional.",
+    "buttons": {
+      "view": "Ver certificado",
+      "viewMore": "Ver más"
     },
-    "seecertbutton":"Ver certificado",
-    "seemorebutton":"Ver más",
-    "items":[
+    "items": [
       {
         "title": "Certificado profesional de Google AI",
         "issuer": "Google / Coursera",
@@ -248,57 +283,71 @@
         "image": "/Files/Coursera Google AI.webp",
         "credentialUrl": "https://coursera.org/verify/professional-cert/HOKLRS8PMWII",
         "description": "Certificado profesional de Google AI compuesto por 7 cursos enfocados en el uso práctico de inteligencia artificial aplicada al trabajo y al desarrollo.",
-        "file":"/Files/Coursera Google AI.pdf",
+        "file": "/Files/Coursera Google AI.pdf",
         "skills": [
           "Ingeniería de prompts",
           "Investigación y generación de insights",
-          "Data Analysis",
-          "Content Creation",
-          "AI App Building",
-          "Communication",
-          "Brainstorming"
+          "Análisis de datos",
+          "Creación de contenido",
+          "Construcción de aplicaciones con IA",
+          "Comunicación",
+          "Lluvia de ideas"
         ],
-
         "courses": [
           {
             "title": "Fundamentos de la IA",
-            "file":"./Files/Coursera AI Fundamentals.pdf"
+            "file": "/Files/Coursera AI Fundamentals.pdf"
           },
           {
             "title": "IA para lluvia de ideas y planificación",
-            "file":"/Files/Coursera AI for Brainstorming and Planning.pdf"
+            "file": "/Files/Coursera AI for Brainstorming and Planning.pdf"
           },
           {
-            "title": "IA para investigación y insights",
-            "file":"/Files/Coursera AI for Research and Insights.pdf"
+            "title": "IA para investigación y generación de insights",
+            "file": "/Files/Coursera AI for Research and Insights.pdf"
           },
           {
             "title": "IA para escritura y comunicación",
-            "file":"/Files/Coursera AI for Writing and Communicating.pdf"
+            "file": "/Files/Coursera AI for Writing and Communicating.pdf"
           },
           {
             "title": "IA para creación de contenido",
-            "file":"/Files/Coursera AI for Content Creation.pdf"
+            "file": "/Files/Coursera AI for Content Creation.pdf"
           },
           {
             "title": "IA para análisis de datos",
-            "file":"/Files/Coursera AI for Data Analysis.pdf"
+            "file": "/Files/Coursera AI for Data Analysis.pdf"
           },
           {
             "title": "IA para construcción de aplicaciones",
-            "file":"/Files/Coursera AI for App Building.pdf"
+            "file": "/Files/Coursera AI for App Building.pdf"
           }
         ]
       }
     ]
   },
+  "contact": {
+    "number": "06",
+    "title": "¿Hablamos?",
+    "description": "¿Tienes una oportunidad profesional, un proyecto o simplemente quieres contactar conmigo? No dudes en escribirme.",
+    "email": "joseperzant00@gmail.com",
+    "phone": "+34 601 25 15 37",
+    "whatsapp": "+34 XXX XXX XXX",
+    "location": "Cádiz, Andalucía, España",
+    "buttons": {
+      "email": "Enviar email",
+      "whatsapp": "Escribir por WhatsApp",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
   "footer": {
     "builtWith": "Hecho con",
-    "createdByStart": "Creado por ",
-    "createdByEnd": " - 2026",
+    "technology": "Vue.js",
+    "createdBy": "Creado por José Antonio Pérez González",
+    "copyright": "© 2026 José Antonio Pérez González",
     "share": "Compartir",
     "copied": "Enlace copiado",
     "shareText": "Echa un vistazo al CV de José Antonio Pérez González"
   }
-
 }

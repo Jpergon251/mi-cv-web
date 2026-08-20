@@ -1,0 +1,238 @@
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--color-background);
+  color: var(--color-text);
+
+  overflow: hidden;
+
+  // ==========================================================
+  // CONTAINER
+  // ==========================================================
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: min(100%, var(--content-max-width));
+    min-height: 100vh;
+
+    margin: 0 auto;
+    padding: calc(var(--header-height) + var(--space-2xl)) var(--space-xl)
+      var(--space-2xl);
+  }
+
+  // ==========================================================
+  // CONTENT
+  // ==========================================================
+
+  &__content {
+    max-width: 950px;
+  }
+
+  // ==========================================================
+  // GREETING
+  // ==========================================================
+
+  &__greeting {
+    margin-bottom: var(--space-md);
+
+    color: var(--color-text-secondary);
+
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  // ==========================================================
+  // NAME
+  // ==========================================================
+
+  &__name {
+    max-width: 1000px;
+
+    color: var(--color-text);
+
+    font-size: clamp(3rem, 7vw, 7rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+  }
+
+  // ==========================================================
+  // ROLE
+  // ==========================================================
+
+  &__role {
+    margin-top: var(--space-lg);
+
+    color: var(--color-text-secondary);
+
+    font-size: clamp(1.5rem, 3vw, 2.75rem);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+
+  // ==========================================================
+  // DESCRIPTION
+  // ==========================================================
+
+  &__description {
+    max-width: 650px;
+
+    margin-top: var(--space-xl);
+
+    color: var(--color-text-secondary);
+
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.7;
+  }
+
+  // ==========================================================
+  // LOCATION
+  // ==========================================================
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+
+    margin-top: var(--space-lg);
+
+    color: var(--color-text-muted);
+
+    font-size: 0.9rem;
+
+    &::before {
+      display: block;
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: var(--radius-round);
+
+      background: var(--color-location);
+
+      content: "";
+    }
+  }
+
+  // ==========================================================
+  // SCROLL
+  // ==========================================================
+
+  &__scroll {
+    position: absolute;
+    bottom: var(--space-xl);
+    left: var(--space-xl);
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+
+    color: var(--color-text-secondary);
+
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    transition:
+      color var(--transition-normal),
+      transform var(--transition-normal);
+
+    &:hover {
+      color: var(--color-text);
+
+      transform: translateY(4px);
+    }
+  }
+
+  &__scroll-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    transition: transform var(--transition-normal);
+  }
+
+  &__scroll:hover &__scroll-arrow {
+    transform: translateY(4px);
+  }
+
+  // ==========================================================
+  // RESPONSIVE
+  // ==========================================================
+
+  @media (max-width: 768px) {
+    &__container {
+      padding: calc(var(--header-height) + var(--space-xl)) var(--space-lg)
+        var(--space-2xl);
+    }
+
+    &__name {
+      font-size: clamp(2.75rem, 11vw, 5rem);
+      line-height: 0.98;
+    }
+
+    &__role {
+      margin-top: var(--space-md);
+
+      font-size: clamp(1.4rem, 6vw, 2rem);
+    }
+
+    &__description {
+      margin-top: var(--space-lg);
+
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    &__scroll {
+      bottom: var(--space-lg);
+      left: var(--space-lg);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__container {
+      padding: calc(var(--header-height) + var(--space-lg)) var(--space-md)
+        var(--space-2xl);
+    }
+
+    &__greeting {
+      font-size: 0.8rem;
+    }
+
+    &__name {
+      font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+    &__role {
+      font-size: 1.4rem;
+    }
+
+    &__description {
+      font-size: 0.95rem;
+    }
+
+    &__location {
+      font-size: 0.8rem;
+    }
+
+    &__scroll {
+      left: var(--space-md);
+      bottom: var(--space-md);
+    }
+  }
+}
