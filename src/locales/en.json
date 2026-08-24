@@ -33,6 +33,12 @@
     "en": "English",
     "es": "Spanish"
   },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "José Antonio Pérez González",
