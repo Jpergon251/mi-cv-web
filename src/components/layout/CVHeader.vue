@@ -112,6 +112,18 @@
           </Transition>
         </div>
 
+        <!-- Theme Toggle -->
+        <button
+          type="button"
+          class="cv-header__theme-toggle"
+          @click="toggleTheme"
+          :aria-label="currentTheme === 'dark' ? t('theme.switchToLight') : t('theme.switchToDark')"
+          :title="currentTheme === 'dark' ? t('theme.switchToLight') : t('theme.switchToDark')"
+        >
+          <Sun v-if="currentTheme === 'dark'" class="cv-header__theme-icon" />
+          <Moon v-else class="cv-header__theme-icon" />
+        </button>
+
         <!-- Contact -->
 
         <button
@@ -160,7 +172,7 @@
 </template>
 
 <script setup>
-import { Check, ChevronUp } from 'lucide-vue-next'
+import { Check, ChevronUp, Sun, Moon } from 'lucide-vue-next'
 import {
   computed,
   onMounted,
@@ -179,8 +191,20 @@ const {
 const menuOpen = ref(false)
 const languageMenuOpen = ref(false)
 const isScrolled = ref(false)
+const currentTheme = ref('light')
 
 const languageMenuRef = ref(null)
+
+// ==========================================================
+// THEME
+// ==========================================================
+
+const toggleTheme = () => {
+  const newTheme = currentTheme.value === 'light' ? 'dark' : 'light'
+  currentTheme.value = newTheme
+  document.documentElement.setAttribute('data-theme', newTheme)
+  localStorage.setItem('cv-theme', newTheme)
+}
 
 // ==========================================================
 // LANGUAGES
@@ -323,6 +347,8 @@ onMounted(() => {
     'keydown',
     handleKeydown
   )
+
+  currentTheme.value = document.documentElement.getAttribute('data-theme') || 'light'
 
   handleScroll()
 })

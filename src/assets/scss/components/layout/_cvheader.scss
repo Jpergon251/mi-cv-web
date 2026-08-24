@@ -358,6 +358,62 @@
   }
 
   // ==========================================================
+  // THEME TOGGLE
+  // ==========================================================
+
+  &__theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 36px;
+    min-height: 36px;
+
+    padding: 0.5rem;
+
+    border: 0;
+    border-radius: var(--radius-sm);
+
+    background: transparent;
+    color: inherit;
+
+    cursor: pointer;
+
+    opacity: 0.7;
+
+    transition:
+      opacity var(--transition-fast),
+      background-color var(--transition-fast),
+      transform var(--transition-fast);
+
+    &:hover {
+      opacity: 1;
+
+      background: var(--color-hover);
+
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 3px;
+    }
+  }
+
+  &__theme-icon {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    transition: transform var(--transition-normal);
+  }
+
+  // ==========================================================
   // CONTACT BUTTON
   // ==========================================================
 
@@ -701,6 +757,13 @@
       right: 0;
 
       min-width: 135px;
+    }
+
+    &__theme-toggle {
+      min-width: 34px;
+      min-height: 34px;
+
+      padding: 0.4rem;
     }
 
     &__contact {

@@ -31,6 +31,20 @@
     <meta property="og:type" content="website" />
 
     <title>Jose Antonio Perez — CV</title>
+
+    <!-- Theme Initialization to prevent FOUC -->
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem('cv-theme');
+          var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          var currentTheme = savedTheme || systemTheme;
+          document.documentElement.setAttribute('data-theme', currentTheme);
+        } catch (e) {
+          console.error('Error setting theme', e);
+        }
+      })();
+    </script>
   </head>
 
   <body>

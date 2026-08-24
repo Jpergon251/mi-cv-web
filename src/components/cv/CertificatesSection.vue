@@ -63,11 +63,13 @@
 
                 <div class="certificates-section__image-overlay">
 
-                  <ExternalLink :size="20" />
+                  <div class="certificates-section__overlay-badge">
+                    <ExternalLink :size="18" />
 
-                  <span>
-                    {{ certificates.buttons.view }}
-                  </span>
+                    <span>
+                      {{ certificates.buttons.view }}
+                    </span>
+                  </div>
 
                 </div>
 

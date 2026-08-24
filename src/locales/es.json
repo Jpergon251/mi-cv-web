@@ -33,6 +33,12 @@
     "en": "Inglés",
     "es": "Español"
   },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo oscuro",
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro"
+  },
   "hero": {
     "greeting": "Hola, soy",
     "name": "José Antonio Pérez González",
