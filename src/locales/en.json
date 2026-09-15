@@ -240,7 +240,15 @@
     "categories": {
       "web": {
         "title": "Web Development",
-        "items": []
+        "items": [
+          {
+            "name": "Calliope",
+            "tag": "In development",
+            "description": "A privacy-focused local web music player to organize your library without servers. Project currently under active development and refinement.",
+            "image": "https://project-calliope.netlify.app/screenshots/MainScreenshot.png",
+            "link": "https://jpergon251.github.io/project-calliope/#/"
+          }
+        ]
       },
       "videogames": {
         "title": "Video Games",

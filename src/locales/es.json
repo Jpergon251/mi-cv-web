@@ -240,7 +240,15 @@
     "categories": {
       "web": {
         "title": "Desarrollo web",
-        "items": []
+        "items": [
+          {
+            "name": "Calliope",
+            "tag": "En desarrollo",
+            "description": "Reproductor de música web local enfocado en la privacidad para organizar tu biblioteca sin servidores. Proyecto actualmente en fase activa de desarrollo y optimización.",
+            "image": "https://project-calliope.netlify.app/screenshots/MainScreenshot.png",
+            "link": "https://jpergon251.github.io/project-calliope/#/"
+          }
+        ]
       },
       "videogames": {
         "title": "Videojuegos",
